@@ -18,18 +18,11 @@ a#quiz_continue_link {
   margin: 0;
   padding: 14px 20px;
   border: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -56,9 +49,6 @@ a#quiz_continue_link:focus {
   color: #fff;
   padding: 10px;
   font-weight: 600;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   text-transform: uppercase;
 }
@@ -86,7 +76,7 @@ a#quiz_continue_link:focus {
   top: 10px;
   right: 20px;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal 900 14px/1 'Font Awesome 5 free';
   font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -121,7 +111,7 @@ a#quiz_continue_link:focus {
 .learndash_topic_dots .topic-notcompleted span:before,
 .learndash_topic_dots ul .topic-completed span:before,
 .learndash_topic_dots ul .topic-notcompleted span:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal 900 14px/1 'Font Awesome 5 free';
   font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -175,7 +165,7 @@ a#quiz_continue_link:focus {
 
 #learndash_profile .list_arrow.collapse:before,
 #learndash_profile .list_arrow.expand:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal 900 14px/1 'Font Awesome 5 free';
   font-size: 20px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -220,9 +210,6 @@ body .thumbnail.course .ld_course_grid_price.ribbon-enrolled {
 body dd.course_progress {
   margin-left: 0;
   width: 100%;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -237,18 +224,11 @@ body #ld_course_list .btn {
   margin: 0;
   padding: 14px 20px;
   border: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.1em;
   line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 

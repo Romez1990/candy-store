@@ -1,8 +1,8 @@
-# OceanWP [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# OceanWP
 
-**Contributors:** Nick  
+**Contributors:** Nicolas, Alex, Amit, and Marko
 **Requires at least:** WordPress 4.4  
-**Tested up to:** WordPress 5.2  
+**Tested up to:** WordPress 5.2.2  
 **Stable tag:** 1.6.8  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  

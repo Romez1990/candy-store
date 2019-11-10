@@ -38,7 +38,7 @@ function oceanwp_breadcrumb_trail( $args = array() ) {
 		|| is_front_page() ) {
 		return;
 	}
-	
+
 	// Yoast breadcrumbs
 	if ( function_exists( 'yoast_breadcrumb' )
 		&& true === WPSEO_Options::get( 'breadcrumbs-enable', false ) ) {
@@ -48,16 +48,16 @@ function oceanwp_breadcrumb_trail( $args = array() ) {
 		}
 		return yoast_breadcrumb( '<nav class="'. $classes .'">', '</nav>' );
 	}
-	
+
 	// SEOPress breadcrumbs
 	if ( function_exists( 'seopress_display_breadcrumbs' ) ) {
 		return seopress_display_breadcrumbs();
     }
-	
+
 	// Rank Math breadcrumbs
-	if ( function_exists( 'rank_math_the_breadcrumbs' ) ) {
+	if ( function_exists( 'rank_math_the_breadcrumbs' ) && RankMath\Helper::get_settings( 'general.breadcrumbs' ) ) {
 		return rank_math_the_breadcrumbs();
-    }
+  }
 
 	$breadcrumb = apply_filters( 'breadcrumb_trail_object', null, $args );
 
@@ -92,7 +92,7 @@ add_action( 'seopress_breadcrumbs_after_html', 'sp_breadcrumbs_after' );
  *
  * @since  1.6.5
  */
-function rm_breadcrumbs() {
+function rm_breadcrumbs( $args ) {
 	$classes = 'site-breadcrumbs clr';
 	if ( $breadcrumbs_position = get_theme_mod( 'ocean_breadcrumbs_position' ) ) {
 		$classes .= ' position-'. $breadcrumbs_position;
@@ -958,7 +958,7 @@ class OceanWP_Breadcrumb_Trail {
 		$this->items[] = sprintf( '<a href="%s">%s</a>', esc_url( get_year_link( get_the_time( 'Y' ) ) ), $year );
 
 		// Add the week item.
-		if ( is_paged() || true === $this->args['show_title'] )
+		if ( is_paged() || true === $this->args['show_title'] )
 			$this->items[] = esc_url( get_archives_link( add_query_arg( array( 'm' => get_the_time( 'Y' ), 'w' => get_the_time( 'W' ) ), home_url() ), $week, false ) );
 	}
 

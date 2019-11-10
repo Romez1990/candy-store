@@ -31,8 +31,8 @@
 
 .woocommerce button.button.loading:after {
   display: inline-block;
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -45,10 +45,7 @@
   margin-left: 6px;
   vertical-align: top;
   font-weight: 400;
-  -ms-animation: spin 2s infinite linear;
   -webkit-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   color: inherit;
   -moz-opacity: 1;
@@ -135,10 +132,6 @@
 }
 
 .woocommerce ul.products li.product .woo-entry-image-swap img {
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   width: 100%;
   overflow: hidden;
@@ -190,16 +183,9 @@
   -moz-opacity: 0;
   -webkit-opacity: 0;
   opacity: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   cursor: pointer;
   z-index: 999;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -228,9 +214,6 @@
   left: 20px;
   min-height: 0;
   min-width: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   background-color: rgba(63, 195, 135, 0.8);
   color: #fff;
@@ -288,10 +271,6 @@
 .woocommerce ul.products li.product .price {
   font-size: 18px;
   text-align: center;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -339,10 +318,6 @@
   -webkit-opacity: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -355,9 +330,6 @@
   border: 3px double #e4e4e4;
   font-size: 12px;
   line-height: 1.5;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   text-transform: none;
 }
@@ -387,9 +359,6 @@
   border: 3px double #e4e4e4;
   font-size: 12px;
   line-height: 1.5;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   text-transform: none;
 }
@@ -414,10 +383,6 @@
 }
 
 .woocommerce ul.products li.product-category.product .woo-entry-inner a .woocommerce-loop-category__title {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -436,11 +401,8 @@
 }
 
 .woocommerce ul.products.list .product-inner {
-  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-align-items: center;
@@ -556,9 +518,6 @@
   width: 20px;
   line-height: 18px;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   z-index: 20;
 }
@@ -598,10 +557,6 @@
   width: 80px;
   height: 80px;
   margin: 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -903,9 +858,6 @@
   line-height: 34px;
   padding: 0 15px;
   border-color: #ddd;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
   margin: 0;
   vertical-align: top;
@@ -1066,12 +1018,7 @@
   font-weight: 400;
   color: #bbb;
   border: 1px solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -1156,9 +1103,6 @@
   position: absolute;
   left: 0;
   top: -5px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -1235,9 +1179,6 @@
   width: 14px;
   height: 14px;
   cursor: pointer;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   background-color: #13aff0;
 }
@@ -1328,9 +1269,6 @@
   padding: 6px 12px 2px 6px;
   background-color: transparent;
   border-color: #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1368,8 +1306,8 @@
 
 .woocommerce a.button.loading:after {
   display: inline-block;
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -1382,10 +1320,7 @@
   margin-left: 6px;
   vertical-align: top;
   font-weight: 400;
-  -ms-animation: spin 2s infinite linear;
   -webkit-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   color: inherit;
   -moz-opacity: 1;
@@ -1405,8 +1340,8 @@
 
 .woocommerce input.button.loading:after {
   display: inline-block;
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -1419,10 +1354,7 @@
   margin-left: 6px;
   vertical-align: top;
   font-weight: 400;
-  -ms-animation: spin 2s infinite linear;
   -webkit-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   color: inherit;
   -moz-opacity: 1;
@@ -1496,9 +1428,6 @@
   width: 32px;
   background-color: #eeeeee;
   color: #333;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   z-index: 99;
   text-align: center;
@@ -1508,8 +1437,9 @@
 
 .woocommerce div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:before {
   display: inline-block;
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   font-size: inherit;
+  font-weight: 900;
   text-rendering: auto;
   display: block;
   content: '\f002';
@@ -1555,10 +1485,6 @@
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
   opacity: 0.5;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -1738,9 +1664,6 @@
   font-weight: normal;
   border: 2px solid #eeeeee;
   padding: 3px 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
   text-decoration: none;
   visibility: hidden;
@@ -1852,8 +1775,8 @@
 
 .woocommerce #respond input#submit.loading:after {
   display: inline-block;
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -1866,10 +1789,7 @@
   margin-left: 6px;
   vertical-align: top;
   font-weight: 400;
-  -ms-animation: spin 2s infinite linear;
   -webkit-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   color: inherit;
   -moz-opacity: 1;
@@ -2067,9 +1987,6 @@
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
   opacity: 0.5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   vertical-align: text-bottom;
 }
@@ -2241,9 +2158,6 @@
   line-height: 1;
   font-weight: 600;
   padding: 3px 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
   border-radius: 2px;
   background-color: #13aff0;
 }
@@ -2525,62 +2439,21 @@
   }
 }
 
-@-moz-keyframes spin {
-  25% {
-    -moz-transform: rotate(270deg);
-  }
-  50% {
-    -moz-transform: rotate(90deg);
-  }
-  75% {
-    -moz-transform: rotate(360deg);
-  }
-  100% {
-    -moz-transform: rotate(180deg);
-  }
-}
-
-@-ms-keyframes spin {
-  25% {
-    -ms-transform: rotate(270deg);
-  }
-  50% {
-    -ms-transform: rotate(90deg);
-  }
-  75% {
-    -ms-transform: rotate(360deg);
-  }
-  100% {
-    -ms-transform: rotate(180deg);
-  }
-}
-
-@-o-keyframes spin {
-  25% {
-    -o-transform: rotate(270deg);
-  }
-  50% {
-    -o-transform: rotate(90deg);
-  }
-  75% {
-    -o-transform: rotate(360deg);
-  }
-  100% {
-    -o-transform: rotate(180deg);
-  }
-}
-
 @keyframes spin {
   25% {
+    -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
   }
   50% {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
   75% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
   100% {
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
@@ -2616,8 +2489,8 @@
 }
 
 .woocommerce-message:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2661,8 +2534,8 @@
 }
 
 .woocommerce-error:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2706,8 +2579,8 @@
 }
 
 .woocommerce-info:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2726,9 +2599,6 @@ ul.woocommerce-error {
   font-size: 14px;
   padding: 15px 20px;
   margin-bottom: 25px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
   border-radius: 2px;
   text-transform: none;
 }
@@ -2738,8 +2608,8 @@ ul.woocommerce-error:before {
 }
 
 ul.woocommerce-error li:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2755,8 +2625,8 @@ ul.woocommerce-message:before {
 }
 
 ul.woocommerce-message li:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2772,8 +2642,8 @@ ul.woocommerce-info:before {
 }
 
 ul.woocommerce-info li:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -2812,9 +2682,6 @@ ul.order_details:after {
   top: auto;
   bottom: -16px;
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -2970,17 +2837,13 @@ ul.order_details li strong {
 }
 
 .woocommerce-checkout #payment ul.payment_methods .wc_payment_method > label:before {
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   text-rendering: auto;
   display: inline-block;
   font-size: inherit;
   content: '\f10c';
   color: #333;
   margin-right: 10px;
-  -webkit-transition: color 0.2s ease;
-  -moz-transition: color 0.2s ease;
-  -ms-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
@@ -2999,10 +2862,6 @@ ul.order_details li strong {
   background-color: #fafafa;
   text-align: left;
   margin-bottom: 1px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -3333,9 +3192,11 @@ ul.order_details li strong {
 
 @keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
@@ -3415,8 +3276,8 @@ p.stars span a {
 }
 
 .return-to-shop .button.wc-backward:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -3451,9 +3312,6 @@ del .amount {
   line-height: 40px;
   height: 40px;
   border-color: #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -3462,8 +3320,8 @@ del .amount {
 }
 
 .select2-container .select2-choice .select2-arrow b {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -3483,8 +3341,8 @@ del .amount {
 }
 
 .select2-container .select2-choice abbr {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -3585,9 +3443,6 @@ del .amount {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -3634,18 +3489,15 @@ form.checkout > .blockUI {
 }
 
 .blockUI:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: '\f110';
-  -ms-animation: fa-spin 0.75s infinite linear;
   -webkit-animation: fa-spin 0.75s infinite linear;
-  -o-animation: fa-spin 0.75s infinite linear;
-  -moz-animation: fa-spin 0.75s infinite linear;
   animation: fa-spin 0.75s infinite linear;
   height: 30px;
   width: 30px;
@@ -3675,9 +3527,6 @@ form.checkout > .blockUI {
 .woocommerce-MyAccount-tabs .oceanwp-user-profile .image img {
   width: 100%;
   height: auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -3736,10 +3585,6 @@ form.checkout > .blockUI {
   -moz-opacity: 0.45;
   -webkit-opacity: 0.45;
   opacity: 0.45;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -ms-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -3826,9 +3671,9 @@ form.checkout > .blockUI {
 .woocommerce .widget_shopping_cart_content .buttons .button:after,
 .woocommerce div.product form.cart .variations .reset_variations:before,
 .wcmenucart i {
-  font-weight: normal;
   font-style: normal;
   letter-spacing: normal;
+  font-weight: 600;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3899,10 +3744,6 @@ form.checkout > .blockUI {
     background-color: #13aff0;
     opacity: 0;
     z-index: 1;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .woocommerce div.product.owp-tabs-layout-vertical .woocommerce-tabs ul.tabs li.active a:after {
@@ -3975,8 +3816,8 @@ form.checkout > .blockUI {
 }
 
 .demo_store:before {
-  font-family: 'FontAwesome';
-  font-weight: normal;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
   text-rendering: auto;
@@ -3995,8 +3836,8 @@ form.checkout > .blockUI {
     padding: 15px 20px;
   }
   .demo_store a:before {
-    font-family: 'FontAwesome';
-    font-weight: normal;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     text-rendering: auto;
@@ -4049,17 +3890,13 @@ form.checkout > .blockUI {
 }
 
 .woocommerce-MyAccount-content #payment ul.payment_methods .woocommerce-PaymentMethod > label:before {
-  font-family: fontawesome;
+  font-family: 'Font Awesome 5 Free';
   text-rendering: auto;
   display: inline-block;
   font-size: inherit;
   content: '\f10c';
   color: #333;
   margin-right: 10px;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
   transition: color .2s ease;
 }
 
@@ -4151,17 +3988,10 @@ form.checkout > .blockUI {
   min-width: 10px;
   border: 1px solid transparent;
   border-radius: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .woocommerce .widget_product_categories li a:before {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -4209,9 +4039,6 @@ form.checkout > .blockUI {
 }
 
 .woocommerce .widget_layered_nav li a:before {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -4225,7 +4052,7 @@ form.checkout > .blockUI {
   text-align: center;
   content: '\f00c';
   color: #fff;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal 900 14px/1 'Font Awesome 5 free';
   font-size: 10px;
   line-height: 10px;
   text-rendering: auto;
@@ -4318,10 +4145,6 @@ Woo Mobile Mini Cart Sidebar
   -moz-opacity: 0;
   -webkit-opacity: 0;
   opacity: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
@@ -4350,13 +4173,7 @@ Woo Mobile Mini Cart Sidebar
   padding: 20px 0 0;
   overflow: auto;
   z-index: 10000;
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -4417,14 +4234,12 @@ Woo Mobile Mini Cart Sidebar
 
 .admin-bar #oceanwp-cart-sidebar-wrap .oceanwp-cart-sidebar {
   top: 32px;
-  height: -webkit-calc(100% - 32px);
   height: calc(100% - 32px);
 }
 
 @media screen and (max-width: 782px) {
   .admin-bar #oceanwp-cart-sidebar-wrap .oceanwp-cart-sidebar {
     top: 46px;
-    height: -webkit-calc(100% - 46px);
     height: calc(100% - 46px);
   }
 }
@@ -4485,10 +4300,6 @@ Woo Off Canvas Filter
   -moz-opacity: 0;
   -webkit-opacity: 0;
   opacity: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
@@ -4517,13 +4328,7 @@ Woo Off Canvas Filter
   padding: 35px;
   overflow: auto;
   z-index: 9999;
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -4545,14 +4350,12 @@ Woo Off Canvas Filter
 
 .admin-bar #oceanwp-off-canvas-sidebar-wrap .oceanwp-off-canvas-sidebar {
   top: 32px;
-  height: -webkit-calc(100% - 32px);
   height: calc(100% - 32px);
 }
 
 @media screen and (max-width: 782px) {
   .admin-bar #oceanwp-off-canvas-sidebar-wrap .oceanwp-off-canvas-sidebar {
     top: 46px;
-    height: -webkit-calc(100% - 46px);
     height: calc(100% - 46px);
   }
 }
@@ -4591,10 +4394,6 @@ Woo Off Canvas Filter
 
 .oceanwp-off-canvas-close svg {
   fill: #333;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -4631,9 +4430,6 @@ Woo Quantity Buttons
   -moz-appearance: textfield;
   /* hack firefox */
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
   border-radius: 0;
 }
 
@@ -4705,9 +4501,6 @@ Woo Product Navigation
   height: 28px;
   line-height: 24px;
   border: 2px solid #e9e9e9;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
 }
@@ -4742,13 +4535,7 @@ Woo Product Navigation
   display: inline-block;
   width: 90px;
   opacity: 0;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   z-index: 100;
 }

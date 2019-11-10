@@ -6,7 +6,7 @@
  *
  * @package shopstar
  */
-define( 'SHOPSTAR_THEME_VERSION' , '1.0.72' );
+define( 'SHOPSTAR_THEME_VERSION' , '1.0.73' );
 
 global $shopstar_demo_slides;
 
@@ -270,7 +270,7 @@ function shopstar_admin_notice() {
 	
 	$message = array (
 		'id' => 9,
-		'text' => 'Don\'t miss out on Out the Box\'s <strong>Halloween sale</strong> with <a href="https://www.outtheboxthemes.com/go/theme-notification-halloween-2019-wordpress-themes/" target="_blank" rel="noreferrer noopener">theme prices good enough to raise the DEAD</a>!!'
+		'text' => ''
 	);
 	
 	if ( !empty( $message['text'] ) && !get_user_meta( $user_id, 'shopstar_admin_notice_' .$message['id']. '_dismissed' ) ) {

@@ -36,6 +36,16 @@ function oceanwp_tgmpa_register() {
 		);
 	}
 
+// If Rank Math SEO is not active, recommend Rank Math SEO
+if ( ! defined( 'RANK_MATH_FILE' ) ) {
+	$plugins[] = array(
+		'name'				=> 'Rank Math SEO',
+		'slug'				=> 'seo-by-rank-math',
+		'required'			=> false,
+		'force_activation'	=> false,
+	);
+}
+	
 	// Register notice
 	tgmpa( $plugins, array(
 		'id'           => 'oceanwp_theme',

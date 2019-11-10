@@ -96,6 +96,9 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.0.73
+* Removed the dismissible admin notification about our Halloween sale
+
 #### 1.0.72
 * Added a dismissible admin notification about our Halloween sale
 
