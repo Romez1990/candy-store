@@ -1,0 +1,10 @@
+2019-11-14T17:36:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_title() in W:\domains\candy-store\wp-content\plugins\ingredients\index.php:49
+Stack trace:
+#0 W:\domains\candy-store\wp-includes\class-wp-hook.php(288): init_ingredients_admin('')
+#1 W:\domains\candy-store\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 W:\domains\candy-store\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 W:\domains\candy-store\wp-content\plugins\woocommerce\includes\admin\meta-boxes\views\html-product-data-general.php(71): do_action('woocommerce_pro...')
+#4 W:\domains\candy-store\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(42): include('W:\\domains\\cand...')
+#5 W:\domains\candy-store\wp-content\plugins\woocommerce\includes\admin\meta-boxes\views\html-product-data-panel.php(51): WC_Meta_Box_Product_Data::output_tabs()
+#6 W:\domains\candy-store\wp-content\plugins\woocommerce\includes\admin\meta-boxes\class-wc-meta-box-product-data.php(33): include('W:\\domain в W:\domains\candy-store\wp-content\plugins\ingredients\index.php на строке 49
+

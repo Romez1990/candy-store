@@ -22,6 +22,10 @@ Woo Multi-Step Checkout
   color: #333;
   font-size: 15px;
   line-height: 40px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
@@ -58,6 +62,10 @@ Woo Multi-Step Checkout
   top: 0;
   width: 0;
   height: 0;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
@@ -178,6 +186,9 @@ Woo Multi-Step Checkout
 }
 
 #checkout-wrapper #form_actions .buttons input {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
   border-radius: 30px;
 }
 

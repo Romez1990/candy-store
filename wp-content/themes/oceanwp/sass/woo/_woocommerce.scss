@@ -2454,8 +2454,9 @@ ul {
 						text-rendering: auto;
 						display: inline-block;
 						font-size: inherit;
-						content: '\f10c';
+						content: '\f111';
 						color: #333;
+						font-weight: 400;
 						margin-right: 10px;
 						@include transition( color .2s ease );
 					}
@@ -3376,14 +3377,15 @@ form.checkout {
 					cursor: pointer;
 					margin: 0;
 					letter-spacing: .4px;
-						
+
 					&:before {
 						font-family: 'Font Awesome 5 Free';
 						text-rendering: auto;
 						display: inline-block;
 						font-size: inherit;
-						content: '\f10c';
+						content: '\f111';
 						color: #333;
+						font-weight: 400;
 						margin-right: 10px;
 						-webkit-transition: color .2s ease;
 						-moz-transition: color .2s ease;

@@ -1,5 +1,8 @@
 # OceanWP Changelog
 
+### *2019.11.13* - 1.7.3:
+* **Fixed** - Broken icon issue.
+
 ### *2019.10.30* - 1.7.2:
 * **Fixed** - Use WooCommerce product object functions.
 * **Fixed** - Updated sidr.js to latest version.
