@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 17, 2019 at 05:33 PM
+-- Generation Time: Nov 17, 2019 at 05:37 PM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.9
 
@@ -395,7 +395,13 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (321, 161, 'ActionScheduler', '', '', '', '2019-11-17 14:32:13', '2019-11-17 14:32:13', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (322, 160, 'ActionScheduler', '', '', '', '2019-11-17 14:32:13', '2019-11-17 14:32:13', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
 (323, 160, 'ActionScheduler', '', '', '', '2019-11-17 14:32:14', '2019-11-17 14:32:14', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
-(324, 162, 'ActionScheduler', '', '', '', '2019-11-17 14:32:14', '2019-11-17 14:32:14', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
+(324, 162, 'ActionScheduler', '', '', '', '2019-11-17 14:32:14', '2019-11-17 14:32:14', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(325, 164, 'ActionScheduler', '', '', '', '2019-11-17 14:36:54', '2019-11-17 14:36:54', 'action created', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(326, 163, 'WooCommerce', '', '', '', '2019-11-17 17:36:57', '2019-11-17 14:36:57', 'Уровни запасов уменьшены: Медовик (#58) 10&rarr;9', 0, '1', 'WooCommerce', 'order_note', 0, 0);
+INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
+(327, 163, 'WooCommerce', '', '', '', '2019-11-17 17:36:59', '2019-11-17 14:36:59', 'Оплата по факту доставки. Статус заказа изменен с В ожидании оплаты на Обработка.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(328, 164, 'ActionScheduler', '', '', '', '2019-11-17 14:37:46', '2019-11-17 14:37:46', 'action started', 0, '1', 'ActionScheduler', 'action_log', 0, 0),
+(329, 164, 'ActionScheduler', '', '', '', '2019-11-17 14:37:47', '2019-11-17 14:37:47', 'action complete', 0, '1', 'ActionScheduler', 'action_log', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -579,7 +585,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (101, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'sidebars_widgets', 'a:12:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"header-widget\";a:0:{}s:15:\"footer-widget-1\";a:0:{}s:15:\"footer-widget-2\";a:0:{}s:24:\"advanced-footer-widget-1\";a:0:{}s:24:\"advanced-footer-widget-2\";a:0:{}s:24:\"advanced-footer-widget-3\";a:0:{}s:24:\"advanced-footer-widget-4\";a:0:{}s:22:\"astra-woo-shop-sidebar\";a:0:{}s:24:\"astra-woo-single-sidebar\";a:0:{}s:13:\"array_version\";i:3;}', 'yes'),
 (1517, 'storefront_nux_dismissed', '1', 'yes'),
-(103, 'cron', 'a:16:{i:1574001214;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1574002511;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574003460;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574004742;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1574024400;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574028660;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574031916;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574053516;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574053526;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574064316;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071859;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071882;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071884;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574078092;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1575331200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
+(103, 'cron', 'a:16:{i:1574001514;a:1:{s:26:\"action_scheduler_run_queue\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:12:\"every_minute\";s:4:\"args\";a:0:{}s:8:\"interval\";i:60;}}}i:1574002511;a:1:{s:33:\"wc_admin_process_orders_milestone\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574003460;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1574004742;a:1:{s:32:\"woocommerce_cancel_unpaid_orders\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:2:{s:8:\"schedule\";b:0;s:4:\"args\";a:0:{}}}}i:1574024400;a:1:{s:27:\"woocommerce_scheduled_sales\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574028660;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574031916;a:1:{s:28:\"woocommerce_cleanup_sessions\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1574053516;a:1:{s:33:\"woocommerce_cleanup_personal_data\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574053526;a:1:{s:30:\"woocommerce_tracker_send_event\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574064316;a:1:{s:24:\"woocommerce_cleanup_logs\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071859;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071882;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574071884;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1574078092;a:1:{s:14:\"wc_admin_daily\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1575331200;a:1:{s:25:\"woocommerce_geoip_updater\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:7:\"monthly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:2635200;}}}s:7:\"version\";i:2;}', 'yes'),
 (104, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -740,7 +746,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (377, 'mailchimp-woocommerce-store_id', '5db979ff285f0', 'yes'),
 (379, 'mailchimp_woocommerce_db_mailchimp_carts', '1', 'no'),
 (380, 'mailchimp-woocommerce_cart_table_add_index_update', '1', 'yes'),
-(383, '_transient_product_query-transient-version', '1574001134', 'yes'),
+(383, '_transient_product_query-transient-version', '1574001417', 'yes'),
 (384, 'wc_admin_install_timestamp', '1572592641', 'yes'),
 (385, 'wc_admin_last_orders_milestone', '0', 'yes'),
 (400, '_transient_shipping-transient-version', '1572436616', 'yes'),
@@ -751,10 +757,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (410, '_transient_timeout_wc_product_loop_cd4ceb08a6a3e9bac7f4260a4e03a47f', '1575028641', 'no'),
 (411, '_transient_wc_product_loop_cd4ceb08a6a3e9bac7f4260a4e03a47f', 'a:2:{s:7:\"version\";s:10:\"1572436543\";s:5:\"value\";O:8:\"stdClass\":5:{s:3:\"ids\";a:0:{}s:5:\"total\";i:0;s:11:\"total_pages\";i:1;s:8:\"per_page\";i:4;s:12:\"current_page\";i:1;}}', 'no'),
 (418, 'product_cat_children', 'a:0:{}', 'yes'),
-(419, '_transient_product-transient-version', '1573759745', 'yes'),
+(419, '_transient_product-transient-version', '1574001417', 'yes'),
 (424, '_transient_timeout_wc_shipping_method_count_legacy', '1575029039', 'no'),
 (425, '_transient_wc_shipping_method_count_legacy', 'a:2:{s:7:\"version\";s:10:\"1572436616\";s:5:\"value\";i:0;}', 'no'),
-(429, '_transient_woocommerce_reports-transient-version', '1572437353', 'yes'),
+(429, '_transient_woocommerce_reports-transient-version', '1574001467', 'yes'),
 (1671, '_transient_timeout_wc_report_orders_stats_5d1e8d0206677eb7f5e087b348c07285', '1574049199', 'no'),
 (1672, '_transient_timeout_wc_report_orders_stats_67155197b36b4b9cf351c1844373c398', '1574049199', 'no');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -766,25 +772,19 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (1903, '_transient_timeout_wc_report_orders_stats_f6c563ba61bbaa6c850e47f41692116a', '1574231474', 'no'),
 (2110, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:63:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.zip\";s:6:\"locale\";s:5:\"ru_RU\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:63:\"https://downloads.wordpress.org/release/ru_RU/wordpress-5.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:3:\"5.3\";s:7:\"version\";s:3:\"5.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1574001136;s:15:\"version_checked\";s:3:\"5.3\";s:12:\"translations\";a:0:{}}', 'no'),
 (2384, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1574001138;s:7:\"checked\";a:17:{s:12:\"arcade-basic\";s:5:\"1.1.1\";s:5:\"astra\";s:5:\"2.1.3\";s:7:\"bellini\";s:6:\"1.45.1\";s:6:\"estore\";s:5:\"1.4.0\";s:5:\"flash\";s:5:\"1.3.1\";s:11:\"floral-lite\";s:5:\"1.1.2\";s:6:\"hestia\";s:5:\"2.5.5\";s:7:\"idyllic\";s:5:\"1.1.2\";s:8:\"maxstore\";s:5:\"1.5.1\";s:9:\"mesmerize\";s:6:\"1.6.89\";s:9:\"multishop\";s:5:\"1.5.2\";s:7:\"oceanwp\";s:5:\"1.7.3\";s:9:\"shop-isle\";s:6:\"1.1.58\";s:7:\"shopper\";s:5:\"1.3.8\";s:8:\"shopstar\";s:6:\"1.0.73\";s:10:\"storefront\";s:5:\"2.5.3\";s:12:\"twentytwenty\";s:3:\"1.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
-(2358, '_transient_timeout_wc_low_stock_count', '1576352468', 'no'),
-(2359, '_transient_wc_low_stock_count', '0', 'no'),
-(2360, '_transient_timeout_wc_outofstock_count', '1576352469', 'no'),
-(2361, '_transient_wc_outofstock_count', '0', 'no'),
-(2504, '_transient_timeout_wc_report_sales_by_date', '1574069480', 'no'),
+(2577, '_transient_orders-transient-version', '1574001420', 'yes'),
 (2491, '_transient_timeout_wc_term_counts', '1576573505', 'no'),
 (2492, '_transient_wc_term_counts', 'a:2:{i:18;s:1:\"2\";i:19;s:1:\"2\";}', 'no'),
-(2493, '_transient_timeout_wc_related_58', '1574067924', 'no'),
-(2494, '_transient_wc_related_58', 'a:1:{s:50:\"limit=4&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=58\";a:1:{i:0;s:2:\"14\";}}', 'no'),
 (2563, '_transient_timeout_wc_admin_unsnooze_admin_notes_checked', '1574004732', 'no'),
 (2564, '_transient_wc_admin_unsnooze_admin_notes_checked', 'yes', 'no'),
-(2572, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:5:\"trash\";s:1:\"1\";s:14:\"total_comments\";i:0;s:3:\"all\";i:0;s:9:\"moderated\";i:0;s:8:\"approved\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
 (2500, '_site_transient_timeout_browser_f9f7120ce5a4a9cf082c424b40cf59f5', '1574587878', 'no'),
 (2501, '_site_transient_browser_f9f7120ce5a4a9cf082c424b40cf59f5', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"78.0.3904.97\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (2502, '_site_transient_timeout_php_check_a5b4d2808570efd012607394df5c6fa9', '1574587878', 'no'),
 (2503, '_site_transient_php_check_a5b4d2808570efd012607394df5c6fa9', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(2505, '_transient_wc_report_sales_by_date', 'a:8:{s:32:\"956642b18b397b14e04fd7fb8d0eee28\";a:0:{}s:32:\"7035cf3224ed9c064feebad76f2547cd\";a:0:{}s:32:\"e2f06aab1e2eb0b4294a280f03afde60\";a:0:{}s:32:\"a37af9b9f763c3f60ac2f90c2656f191\";N;s:32:\"feac8bfdb645e49f977b06ff0e258e25\";a:0:{}s:32:\"096f00fe631303d634ddd7c544a21a4e\";a:0:{}s:32:\"74627016e31f55a800c4aec518fda4f0\";a:0:{}s:32:\"74e57258f700a61b15441f8676939c16\";a:0:{}}', 'no'),
-(2506, '_transient_timeout_wc_admin_report', '1574069480', 'no'),
-(2507, '_transient_wc_admin_report', 'a:1:{s:32:\"963357367c400d4b2a2870b29e9dc2d6\";a:0:{}}', 'no'),
+(2578, '_transient_timeout_wc_order_163_needs_processing', '1574087816', 'no'),
+(2579, '_transient_wc_order_163_needs_processing', '1', 'no'),
+(2584, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:0;s:3:\"all\";i:0;s:5:\"trash\";s:1:\"1\";s:9:\"moderated\";i:0;s:8:\"approved\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
+(2585, '_transient_as_comment_count', 'O:8:\"stdClass\":7:{s:5:\"trash\";s:1:\"1\";s:14:\"total_comments\";i:0;s:3:\"all\";i:0;s:9:\"moderated\";i:0;s:8:\"approved\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
 (2508, '_site_transient_timeout_community-events-1aecf33ab8525ff212ebdffbb438372e', '1574026283', 'no'),
 (2509, '_site_transient_community-events-1aecf33ab8525ff212ebdffbb438372e', 'a:3:{s:9:\"sandboxed\";b:0;s:8:\"location\";a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}s:6:\"events\";a:0:{}}', 'no'),
 (2510, '_transient_timeout_feed_126d1ca39d75da07beec8b892738427b', '1574026284', 'no');
@@ -904,7 +904,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2569, '_site_transient_theme_roots', 'a:17:{s:12:\"arcade-basic\";s:7:\"/themes\";s:5:\"astra\";s:7:\"/themes\";s:7:\"bellini\";s:7:\"/themes\";s:6:\"estore\";s:7:\"/themes\";s:5:\"flash\";s:7:\"/themes\";s:11:\"floral-lite\";s:7:\"/themes\";s:6:\"hestia\";s:7:\"/themes\";s:7:\"idyllic\";s:7:\"/themes\";s:8:\"maxstore\";s:7:\"/themes\";s:9:\"mesmerize\";s:7:\"/themes\";s:9:\"multishop\";s:7:\"/themes\";s:7:\"oceanwp\";s:7:\"/themes\";s:9:\"shop-isle\";s:7:\"/themes\";s:7:\"shopper\";s:7:\"/themes\";s:8:\"shopstar\";s:7:\"/themes\";s:10:\"storefront\";s:7:\"/themes\";s:12:\"twentytwenty\";s:7:\"/themes\";}', 'no'),
 (2525, '_transient_timeout_plugin_slugs', '1574069533', 'no'),
 (2526, '_transient_plugin_slugs', 'a:5:{i:0;s:19:\"akismet/akismet.php\";i:1;s:21:\"ingredients/index.php\";i:2;s:51:\"mailchimp-for-woocommerce/mailchimp-woocommerce.php\";i:3;s:27:\"woocommerce/woocommerce.php\";i:4;s:39:\"woocommerce-admin/woocommerce-admin.php\";}', 'no'),
-(2571, '_transient_wc_count_comments', 'O:8:\"stdClass\":7:{s:14:\"total_comments\";i:0;s:3:\"all\";i:0;s:5:\"trash\";s:1:\"1\";s:9:\"moderated\";i:0;s:8:\"approved\";i:0;s:4:\"spam\";i:0;s:12:\"post-trashed\";i:0;}', 'yes'),
 (2566, '_transient_timeout__woocommerce_helper_subscriptions', '1574002036', 'no'),
 (2567, '_transient__woocommerce_helper_subscriptions', 'a:0:{}', 'no');
 
@@ -1008,7 +1007,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (83, 59, '_wp_attached_file', '2019/11/post_5d32901f59766.jpg'),
 (84, 59, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1280;s:4:\"file\";s:30:\"2019/11/post_5d32901f59766.jpg\";s:5:\"sizes\";a:12:{s:21:\"woocommerce_thumbnail\";a:5:{s:4:\"file\";s:30:\"post_5d32901f59766-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:18:\"woocommerce_single\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-600x400.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:400;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:31:\"post_5d32901f59766-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:4:\"half\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-570x220.jpg\";s:5:\"width\";i:570;s:6:\"height\";i:220;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"square100\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:29:\"woocommerce_gallery_thumbnail\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"shop_catalog\";a:5:{s:4:\"file\";s:30:\"post_5d32901f59766-300x375.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:375;s:9:\"mime-type\";s:10:\"image/jpeg\";s:9:\"uncropped\";b:0;}s:11:\"shop_single\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-600x400.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:400;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:14:\"shop_thumbnail\";a:4:{s:4:\"file\";s:30:\"post_5d32901f59766-100x100.jpg\";s:5:\"width\";i:100;s:6:\"height\";i:100;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (85, 58, '_thumbnail_id', '59'),
-(86, 58, 'total_sales', '0'),
+(86, 58, 'total_sales', '1'),
 (87, 58, '_tax_status', 'taxable'),
 (88, 58, '_tax_class', ''),
 (89, 58, '_manage_stock', 'yes'),
@@ -1018,7 +1017,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (93, 58, '_downloadable', 'no'),
 (94, 58, '_download_limit', '-1'),
 (95, 58, '_download_expiry', '-1'),
-(96, 58, '_stock', '10'),
+(96, 58, '_stock', '9.000000'),
 (97, 58, '_stock_status', 'instock'),
 (98, 58, '_wc_average_rating', '0'),
 (99, 58, '_wc_review_count', '0'),
@@ -1111,7 +1110,41 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (173, 143, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1573760519;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (174, 144, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1573760520;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
 (189, 161, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574004732;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
-(190, 162, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574004734;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}');
+(190, 162, '_action_manager_schedule', 'O:32:\"ActionScheduler_IntervalSchedule\":2:{s:49:\"\0ActionScheduler_IntervalSchedule\0start_timestamp\";i:1574004734;s:53:\"\0ActionScheduler_IntervalSchedule\0interval_in_seconds\";i:3600;}'),
+(191, 164, '_action_manager_schedule', 'O:30:\"ActionScheduler_SimpleSchedule\":1:{s:41:\"\0ActionScheduler_SimpleSchedule\0timestamp\";i:1574001419;}'),
+(192, 163, '_order_key', 'wc_order_T6LElRsKIHjWX'),
+(193, 163, '_customer_user', '0'),
+(194, 163, '_payment_method', 'cod'),
+(195, 163, '_payment_method_title', 'Оплата при доставке'),
+(196, 163, '_customer_ip_address', '127.0.0.1'),
+(197, 163, '_customer_user_agent', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 YaBrowser/19.10.2.195 Yowser/2.5 Safari/537.36'),
+(198, 163, '_created_via', 'checkout'),
+(199, 163, '_cart_hash', '84af73363325e4a5879b2cbe7c797d96'),
+(200, 163, '_billing_first_name', 'Роман'),
+(201, 163, '_billing_last_name', 'Яковлев'),
+(202, 163, '_billing_address_1', 'Волгодонск'),
+(203, 163, '_billing_city', 'Волгодонск'),
+(204, 163, '_billing_state', 'Ростовская обл'),
+(205, 163, '_billing_postcode', '123456'),
+(206, 163, '_billing_country', 'RU'),
+(207, 163, '_billing_email', 'Romez1990@gmail.com'),
+(208, 163, '_billing_phone', '+79895029515'),
+(209, 163, '_order_currency', 'RUB'),
+(210, 163, '_cart_discount', '0'),
+(211, 163, '_cart_discount_tax', '0'),
+(212, 163, '_order_shipping', '0'),
+(213, 163, '_order_shipping_tax', '0'),
+(214, 163, '_order_tax', '0'),
+(215, 163, '_order_total', '1000'),
+(216, 163, '_order_version', '3.8.0'),
+(217, 163, '_prices_include_tax', 'no'),
+(218, 163, '_billing_address_index', 'Роман Яковлев  Волгодонск  Волгодонск Ростовская обл 123456 RU Romez1990@gmail.com +79895029515'),
+(219, 163, '_shipping_address_index', '        '),
+(220, 163, 'is_vat_exempt', 'no'),
+(221, 163, '_download_permissions_granted', 'yes'),
+(222, 163, '_recorded_sales', 'yes'),
+(223, 163, '_recorded_coupon_usage_counts', 'yes'),
+(224, 163, '_order_stock_reduced', 'yes');
 
 -- --------------------------------------------------------
 
@@ -1204,7 +1237,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (55, 0, '2019-11-05 14:27:26', '2019-11-05 14:27:26', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dc6ce4c458184.42072051-GaxGb2XuCgvjA5K49amsVgCegI8Mb6rG', '', '', '2019-11-09 17:33:48', '2019-11-09 14:33:48', '', 0, 'http://candy-store.epizy.com/?post_type=scheduled-action&#038;p=55', 0, 'scheduled-action', '', 3),
 (56, 0, '2019-11-05 14:27:26', '2019-11-05 14:27:26', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dc6ce4cc214a3.87074165-h18Eb8E75mEF4kuWioLsCNd44HItCpLM', '', '', '2019-11-09 17:33:48', '2019-11-09 14:33:48', '', 0, 'http://candy-store.epizy.com/?post_type=scheduled-action&#038;p=56', 0, 'scheduled-action', '', 3),
 (113, 0, '2019-11-13 19:14:36', '2019-11-13 19:14:36', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dcc563115ed57.85240591-l7yzU4JL3NUgeUi4Un6LLOujErDyotlu', '', '', '2019-11-13 22:14:57', '2019-11-13 19:14:57', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=113', 0, 'scheduled-action', '', 3),
-(58, 1, '2019-11-05 16:35:38', '2019-11-05 13:35:38', 'Уже одно называние торта Медовик навевает приятные воспоминания о приятно проведенном вечере за чашкой чая или веселом дне рождения в детстве.', 'Медовик', '', 'publish', 'open', 'closed', '', '%d0%bc%d0%b5%d0%b4%d0%be%d0%b2%d0%b8%d0%ba', '', '', '2019-11-14 22:29:05', '2019-11-14 19:29:05', '', 0, 'http://candy-store.epizy.com/?post_type=product&#038;p=58', 0, 'product', '', 0),
+(58, 1, '2019-11-05 16:35:38', '2019-11-05 13:35:38', 'Уже одно называние торта Медовик навевает приятные воспоминания о приятно проведенном вечере за чашкой чая или веселом дне рождения в детстве.', 'Медовик', '', 'publish', 'open', 'closed', '', '%d0%bc%d0%b5%d0%b4%d0%be%d0%b2%d0%b8%d0%ba', '', '', '2019-11-17 17:36:57', '2019-11-17 14:36:57', '', 0, 'http://candy-store.epizy.com/?post_type=product&#038;p=58', 0, 'product', '', 0),
 (59, 1, '2019-11-05 16:33:50', '2019-11-05 13:33:50', '', 'post_5d32901f59766', '', 'inherit', 'open', 'closed', '', 'post_5d32901f59766', '', '', '2019-11-05 16:33:50', '2019-11-05 13:33:50', '', 58, 'http://candy-store.epizy.com/wp-content/uploads/2019/11/post_5d32901f59766.jpg', 0, 'attachment', 'image/jpeg', 0),
 (60, 0, '2019-11-09 15:33:48', '2019-11-09 15:33:48', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dc78e96537f56.07663922-RTKMAe2Kw7CsHdb1eh7M7X1ryKrX5dsb', '', '', '2019-11-10 07:14:14', '2019-11-10 04:14:14', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=60', 0, 'scheduled-action', '', 3),
 (61, 0, '2019-11-09 15:33:48', '2019-11-09 15:33:48', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dc78e970f6782.05900699-B9QuRqnhbg6935xLNbEQMRlWIjhCCFrM', '', '', '2019-11-10 07:14:15', '2019-11-10 04:14:15', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=61', 0, 'scheduled-action', '', 3),
@@ -1307,7 +1340,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (159, 0, '2019-11-17 11:05:13', '2019-11-17 11:05:13', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd159ec409958.93452062-Gbz9WeB1dPuNSgnGBzSiymr9MgP4nuua', '', '', '2019-11-17 17:32:12', '2019-11-17 14:32:12', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=159', 0, 'scheduled-action', '', 3),
 (160, 0, '2019-11-17 11:05:13', '2019-11-17 11:05:13', '[]', 'wc_admin_unsnooze_admin_notes', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd159ee23f612.50055687-krqbzWtUoI0lPpqzVnFcTTSMnctbHirX', '', '', '2019-11-17 17:32:14', '2019-11-17 14:32:14', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=160', 0, 'scheduled-action', '', 3),
 (161, 0, '2019-11-17 15:32:12', '2019-11-17 15:32:12', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-17 15:32:12', '2019-11-17 15:32:12', '', 0, 'http://candy-store/?post_type=scheduled-action&p=161', 0, 'scheduled-action', '', 1),
-(162, 0, '2019-11-17 15:32:14', '2019-11-17 15:32:14', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-17 15:32:14', '2019-11-17 15:32:14', '', 0, 'http://candy-store/?post_type=scheduled-action&p=162', 0, 'scheduled-action', '', 1);
+(162, 0, '2019-11-17 15:32:14', '2019-11-17 15:32:14', '[]', 'wc_admin_unsnooze_admin_notes', '', 'pending', 'open', 'closed', '', '', '', '', '2019-11-17 15:32:14', '2019-11-17 15:32:14', '', 0, 'http://candy-store/?post_type=scheduled-action&p=162', 0, 'scheduled-action', '', 1),
+(163, 1, '2019-11-17 17:36:54', '2019-11-17 14:36:54', '', 'Order &ndash; Ноябрь 17, 2019 @ 05:36 ПП', '', 'wc-processing', 'open', 'closed', 'wc_order_9JjkN07LAkF6W', '%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7-17-nov-2019-%d0%b2-1436', '', '', '2019-11-17 17:36:56', '2019-11-17 14:36:56', '', 0, 'http://candy-store/?post_type=shop_order&#038;p=163', 0, 'shop_order', '', 2),
+(164, 0, '2019-11-17 14:36:59', '2019-11-17 14:36:59', '[163]', 'wc-admin_import_order', '', 'publish', 'open', 'closed', '', 'scheduled-action-5dd15b3b22cf85.98997976-WGByxUKwWiKXzuGcClMHERVhBzgqzOxD', '', '', '2019-11-17 17:37:47', '2019-11-17 14:37:47', '', 0, 'http://candy-store/?post_type=scheduled-action&#038;p=164', 30, 'scheduled-action', '', 3);
 
 -- --------------------------------------------------------
 
@@ -1386,7 +1421,8 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (19, 'торт', '%d1%82%d0%be%d1%80%d1%82', 0),
 (20, 'О магазине', '%d0%be-%d0%bc%d0%b0%d0%b3%d0%b0%d0%b7%d0%b8%d0%bd%d0%b5', 0),
 (23, 'Кг', 'kg', 0),
-(24, 'Шт', 'item', 0);
+(24, 'Шт', 'item', 0),
+(25, 'wc-admin-data', 'wc-admin-data', 0);
 
 -- --------------------------------------------------------
 
@@ -1520,7 +1556,8 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (159, 17, 0),
 (160, 17, 0),
 (161, 17, 0),
-(162, 17, 0);
+(162, 17, 0),
+(164, 25, 0);
 
 -- --------------------------------------------------------
 
@@ -1565,7 +1602,8 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (21, 21, 'unit', 'Килограмм', 0, 0),
 (22, 22, 'unit', 'Штука', 0, 0),
 (23, 23, 'units', 'Килограммы', 0, 0),
-(24, 24, 'units', 'Штуки', 0, 0);
+(24, 24, 'units', 'Штуки', 0, 0),
+(25, 25, 'action-group', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -1766,6 +1804,13 @@ CREATE TABLE `wp_wc_customer_lookup` (
   `state` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT ''
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
+--
+-- Dumping data for table `wp_wc_customer_lookup`
+--
+
+INSERT INTO `wp_wc_customer_lookup` (`customer_id`, `user_id`, `username`, `first_name`, `last_name`, `email`, `date_last_active`, `date_registered`, `country`, `postcode`, `city`, `state`) VALUES
+(1, NULL, '', 'Роман', 'Яковлев', 'Romez1990@gmail.com', '2019-11-17 11:36:54', NULL, 'RU', '123456', 'Волгодонск', 'Ростовская обл');
+
 -- --------------------------------------------------------
 
 --
@@ -1815,6 +1860,13 @@ CREATE TABLE `wp_wc_order_product_lookup` (
   `shipping_tax_amount` double NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
+--
+-- Dumping data for table `wp_wc_order_product_lookup`
+--
+
+INSERT INTO `wp_wc_order_product_lookup` (`order_item_id`, `order_id`, `product_id`, `variation_id`, `customer_id`, `date_created`, `product_qty`, `product_net_revenue`, `product_gross_revenue`, `coupon_amount`, `tax_amount`, `shipping_amount`, `shipping_tax_amount`) VALUES
+(1, 163, 58, 0, 1, '2019-11-17 17:36:54', 1, 1000, 1000, 0, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -1835,6 +1887,13 @@ CREATE TABLE `wp_wc_order_stats` (
   `status` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `customer_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `wp_wc_order_stats`
+--
+
+INSERT INTO `wp_wc_order_stats` (`order_id`, `parent_id`, `date_created`, `date_created_gmt`, `num_items_sold`, `gross_total`, `tax_total`, `shipping_total`, `net_total`, `returning_customer`, `status`, `customer_id`) VALUES
+(163, 0, '2019-11-17 17:36:54', '2019-11-17 14:36:54', 1, 1000, 0, 0, 1000, 0, 'wc-processing', 1);
 
 -- --------------------------------------------------------
 
@@ -1878,7 +1937,7 @@ CREATE TABLE `wp_wc_product_meta_lookup` (
 
 INSERT INTO `wp_wc_product_meta_lookup` (`product_id`, `sku`, `virtual`, `downloadable`, `min_price`, `max_price`, `onsale`, `stock_quantity`, `stock_status`, `rating_count`, `average_rating`, `total_sales`) VALUES
 (14, '', 0, 0, '1000.00', '1000.00', 0, 7, 'instock', 0, '0.00', 0),
-(58, '', 0, 0, '1000.00', '1000.00', 0, 10, 'instock', 0, '0.00', 0);
+(58, '', 0, 0, '1000.00', '1000.00', 0, 9, 'instock', 0, '0.00', 1);
 
 -- --------------------------------------------------------
 
@@ -2004,6 +2063,22 @@ CREATE TABLE `wp_woocommerce_order_itemmeta` (
   `meta_value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
+--
+-- Dumping data for table `wp_woocommerce_order_itemmeta`
+--
+
+INSERT INTO `wp_woocommerce_order_itemmeta` (`meta_id`, `order_item_id`, `meta_key`, `meta_value`) VALUES
+(1, 1, '_product_id', '58'),
+(2, 1, '_variation_id', '0'),
+(3, 1, '_qty', '1'),
+(4, 1, '_tax_class', ''),
+(5, 1, '_line_subtotal', '1000'),
+(6, 1, '_line_subtotal_tax', '0'),
+(7, 1, '_line_total', '1000'),
+(8, 1, '_line_tax', '0'),
+(9, 1, '_line_tax_data', 'a:2:{s:5:\"total\";a:0:{}s:8:\"subtotal\";a:0:{}}'),
+(10, 1, '_reduced_stock', '1');
+
 -- --------------------------------------------------------
 
 --
@@ -2016,6 +2091,13 @@ CREATE TABLE `wp_woocommerce_order_items` (
   `order_item_type` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `order_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+
+--
+-- Dumping data for table `wp_woocommerce_order_items`
+--
+
+INSERT INTO `wp_woocommerce_order_items` (`order_item_id`, `order_item_name`, `order_item_type`, `order_id`) VALUES
+(1, 'Медовик', 'line_item', 163);
 
 -- --------------------------------------------------------
 
@@ -2063,7 +2145,8 @@ CREATE TABLE `wp_woocommerce_sessions` (
 --
 
 INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
-(131, '1', 'a:8:{s:4:\"cart\";s:6:\"a:0:{}\";s:11:\"cart_totals\";s:367:\"a:15:{s:8:\"subtotal\";i:0;s:12:\"subtotal_tax\";i:0;s:14:\"shipping_total\";i:0;s:12:\"shipping_tax\";i:0;s:14:\"shipping_taxes\";a:0:{}s:14:\"discount_total\";i:0;s:12:\"discount_tax\";i:0;s:19:\"cart_contents_total\";i:0;s:17:\"cart_contents_tax\";i:0;s:19:\"cart_contents_taxes\";a:0:{}s:9:\"fee_total\";i:0;s:7:\"fee_tax\";i:0;s:9:\"fee_taxes\";a:0:{}s:5:\"total\";i:0;s:9:\"total_tax\";i:0;}\";s:15:\"applied_coupons\";s:6:\"a:0:{}\";s:22:\"coupon_discount_totals\";s:6:\"a:0:{}\";s:26:\"coupon_discount_tax_totals\";s:6:\"a:0:{}\";s:21:\"removed_cart_contents\";s:6:\"a:0:{}\";s:8:\"customer\";s:760:\"a:26:{s:2:\"id\";s:1:\"1\";s:13:\"date_modified\";s:25:\"2019-11-03T14:05:33+00:00\";s:8:\"postcode\";s:0:\"\";s:4:\"city\";s:0:\"\";s:9:\"address_1\";s:0:\"\";s:7:\"address\";s:0:\"\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:0:\"\";s:7:\"country\";s:2:\"RU\";s:17:\"shipping_postcode\";s:0:\"\";s:13:\"shipping_city\";s:0:\"\";s:18:\"shipping_address_1\";s:0:\"\";s:16:\"shipping_address\";s:0:\"\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:0:\"\";s:16:\"shipping_country\";s:2:\"RU\";s:13:\"is_vat_exempt\";s:0:\"\";s:19:\"calculated_shipping\";s:0:\"\";s:10:\"first_name\";s:26:\"Администратор\";s:9:\"last_name\";s:0:\"\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:0:\"\";s:5:\"email\";s:19:\"Romez1990@gmail.com\";s:19:\"shipping_first_name\";s:0:\"\";s:18:\"shipping_last_name\";s:0:\"\";s:16:\"shipping_company\";s:0:\"\";}\";s:22:\"mailchimp_landing_site\";s:42:\"http://candy-store/wp-admin/admin-ajax.php\";}', 1574155928);
+(131, '1', 'a:8:{s:4:\"cart\";s:6:\"a:0:{}\";s:11:\"cart_totals\";s:367:\"a:15:{s:8:\"subtotal\";i:0;s:12:\"subtotal_tax\";i:0;s:14:\"shipping_total\";i:0;s:12:\"shipping_tax\";i:0;s:14:\"shipping_taxes\";a:0:{}s:14:\"discount_total\";i:0;s:12:\"discount_tax\";i:0;s:19:\"cart_contents_total\";i:0;s:17:\"cart_contents_tax\";i:0;s:19:\"cart_contents_taxes\";a:0:{}s:9:\"fee_total\";i:0;s:7:\"fee_tax\";i:0;s:9:\"fee_taxes\";a:0:{}s:5:\"total\";i:0;s:9:\"total_tax\";i:0;}\";s:15:\"applied_coupons\";s:6:\"a:0:{}\";s:22:\"coupon_discount_totals\";s:6:\"a:0:{}\";s:26:\"coupon_discount_tax_totals\";s:6:\"a:0:{}\";s:21:\"removed_cart_contents\";s:6:\"a:0:{}\";s:8:\"customer\";s:760:\"a:26:{s:2:\"id\";s:1:\"1\";s:13:\"date_modified\";s:25:\"2019-11-03T14:05:33+00:00\";s:8:\"postcode\";s:0:\"\";s:4:\"city\";s:0:\"\";s:9:\"address_1\";s:0:\"\";s:7:\"address\";s:0:\"\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:0:\"\";s:7:\"country\";s:2:\"RU\";s:17:\"shipping_postcode\";s:0:\"\";s:13:\"shipping_city\";s:0:\"\";s:18:\"shipping_address_1\";s:0:\"\";s:16:\"shipping_address\";s:0:\"\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:0:\"\";s:16:\"shipping_country\";s:2:\"RU\";s:13:\"is_vat_exempt\";s:0:\"\";s:19:\"calculated_shipping\";s:0:\"\";s:10:\"first_name\";s:26:\"Администратор\";s:9:\"last_name\";s:0:\"\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:0:\"\";s:5:\"email\";s:19:\"Romez1990@gmail.com\";s:19:\"shipping_first_name\";s:0:\"\";s:18:\"shipping_last_name\";s:0:\"\";s:16:\"shipping_company\";s:0:\"\";}\";s:22:\"mailchimp_landing_site\";s:42:\"http://candy-store/wp-admin/admin-ajax.php\";}', 1574155928),
+(132, '179c08fbb9b9354a2f155a4b02919d2c', 'a:9:{s:4:\"cart\";s:6:\"a:0:{}\";s:11:\"cart_totals\";s:367:\"a:15:{s:8:\"subtotal\";i:0;s:12:\"subtotal_tax\";i:0;s:14:\"shipping_total\";i:0;s:12:\"shipping_tax\";i:0;s:14:\"shipping_taxes\";a:0:{}s:14:\"discount_total\";i:0;s:12:\"discount_tax\";i:0;s:19:\"cart_contents_total\";i:0;s:17:\"cart_contents_tax\";i:0;s:19:\"cart_contents_taxes\";a:0:{}s:9:\"fee_total\";i:0;s:7:\"fee_tax\";i:0;s:9:\"fee_taxes\";a:0:{}s:5:\"total\";i:0;s:9:\"total_tax\";i:0;}\";s:15:\"applied_coupons\";s:6:\"a:0:{}\";s:22:\"coupon_discount_totals\";s:6:\"a:0:{}\";s:26:\"coupon_discount_tax_totals\";s:6:\"a:0:{}\";s:21:\"removed_cart_contents\";s:6:\"a:0:{}\";s:8:\"customer\";s:967:\"a:26:{s:2:\"id\";s:1:\"0\";s:13:\"date_modified\";s:0:\"\";s:8:\"postcode\";s:6:\"123456\";s:4:\"city\";s:20:\"Волгодонск\";s:9:\"address_1\";s:20:\"Волгодонск\";s:7:\"address\";s:20:\"Волгодонск\";s:9:\"address_2\";s:0:\"\";s:5:\"state\";s:27:\"Ростовская обл\";s:7:\"country\";s:2:\"RU\";s:17:\"shipping_postcode\";s:6:\"123456\";s:13:\"shipping_city\";s:20:\"Волгодонск\";s:18:\"shipping_address_1\";s:20:\"Волгодонск\";s:16:\"shipping_address\";s:20:\"Волгодонск\";s:18:\"shipping_address_2\";s:0:\"\";s:14:\"shipping_state\";s:27:\"Ростовская обл\";s:16:\"shipping_country\";s:2:\"RU\";s:13:\"is_vat_exempt\";s:0:\"\";s:19:\"calculated_shipping\";s:1:\"1\";s:10:\"first_name\";s:10:\"Роман\";s:9:\"last_name\";s:14:\"Яковлев\";s:7:\"company\";s:0:\"\";s:5:\"phone\";s:12:\"+79895029515\";s:5:\"email\";s:19:\"Romez1990@gmail.com\";s:19:\"shipping_first_name\";s:10:\"Роман\";s:18:\"shipping_last_name\";s:14:\"Яковлев\";s:16:\"shipping_company\";s:0:\"\";}\";s:21:\"chosen_payment_method\";s:3:\"cod\";s:22:\"order_awaiting_payment\";N;}', 1574174190);
 
 -- --------------------------------------------------------
 
@@ -2482,7 +2565,7 @@ ALTER TABLE `wp_commentmeta`
 -- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
-  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=325;
+  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=330;
 
 --
 -- AUTO_INCREMENT for table `wp_failed_jobs`
@@ -2506,19 +2589,19 @@ ALTER TABLE `wp_mailchimp_jobs`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2573;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2586;
 
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 
 --
 -- AUTO_INCREMENT for table `wp_queue`
@@ -2536,13 +2619,13 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `wp_usermeta`
@@ -2572,7 +2655,7 @@ ALTER TABLE `wp_wc_admin_note_actions`
 -- AUTO_INCREMENT for table `wp_wc_customer_lookup`
 --
 ALTER TABLE `wp_wc_customer_lookup`
-  MODIFY `customer_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `customer_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `wp_wc_download_log`
@@ -2620,13 +2703,13 @@ ALTER TABLE `wp_woocommerce_log`
 -- AUTO_INCREMENT for table `wp_woocommerce_order_itemmeta`
 --
 ALTER TABLE `wp_woocommerce_order_itemmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_order_items`
 --
 ALTER TABLE `wp_woocommerce_order_items`
-  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_payment_tokenmeta`
@@ -2644,7 +2727,7 @@ ALTER TABLE `wp_woocommerce_payment_tokens`
 -- AUTO_INCREMENT for table `wp_woocommerce_sessions`
 --
 ALTER TABLE `wp_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_shipping_zones`
