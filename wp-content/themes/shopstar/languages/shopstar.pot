@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: shopstar\n"
-"POT-Creation-Date: 2019-09-27 17:14+0200\n"
+"POT-Creation-Date: 2019-11-21 14:55+0200\n"
 "PO-Revision-Date: 2016-11-08 23:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -111,127 +111,127 @@ msgctxt "font style"
 msgid "Monospaced"
 msgstr ""
 
-#: customizer/customizer-options.php:38
+#: customizer/customizer-options.php:39
 msgid "Site Identity"
 msgstr ""
 
-#: customizer/customizer-options.php:45
+#: customizer/customizer-options.php:46
 msgid "Logo"
 msgstr ""
 
-#: customizer/customizer-options.php:56
-#: customizer/customizer-options.php:104
+#: customizer/customizer-options.php:57
+#: customizer/customizer-options.php:105
 msgid "Layout"
 msgstr ""
 
-#: customizer/customizer-options.php:66
-#: customizer/customizer-options.php:332
+#: customizer/customizer-options.php:67
+#: customizer/customizer-options.php:333
 msgid "Header"
 msgstr ""
 
-#: customizer/customizer-options.php:75
+#: customizer/customizer-options.php:76
 msgid "Top Bar"
 msgstr ""
 
-#: customizer/customizer-options.php:82
+#: customizer/customizer-options.php:83
 msgid "Show Top Bar"
 msgstr ""
 
-#: customizer/customizer-options.php:93
+#: customizer/customizer-options.php:94
 msgid "Site Logo Area"
 msgstr ""
 
-#: customizer/customizer-options.php:116
+#: customizer/customizer-options.php:117
 msgid "Header Text"
 msgstr ""
 
-#: customizer/customizer-options.php:123
+#: customizer/customizer-options.php:124
 msgid "Info Text"
 msgstr ""
 
-#: customizer/customizer-options.php:135
+#: customizer/customizer-options.php:136
 msgid "Social Media Links"
 msgstr ""
 
-#: customizer/customizer-options.php:141
+#: customizer/customizer-options.php:142
 msgid "Email Address"
 msgstr ""
 
-#: customizer/customizer-options.php:147
+#: customizer/customizer-options.php:148
 msgid "Skype Name"
 msgstr ""
 
-#: customizer/customizer-options.php:153
+#: customizer/customizer-options.php:154
 msgid "Tumblr"
 msgstr ""
 
-#: customizer/customizer-options.php:159
+#: customizer/customizer-options.php:160
 msgid "Flickr"
 msgstr ""
 
-#: customizer/customizer-options.php:170
+#: customizer/customizer-options.php:171
 #: library/template-parts/header-centered.php:53
 #: library/template-parts/header-left-aligned.php:53
 msgid "Search"
 msgstr ""
 
-#: customizer/customizer-options.php:176
+#: customizer/customizer-options.php:177
 msgid "Show Search in the Navigation Menu"
 msgstr ""
 
-#: customizer/customizer-options.php:184
+#: customizer/customizer-options.php:185
 msgid "Default Search Input Text"
 msgstr ""
 
-#: customizer/customizer-options.php:187
+#: customizer/customizer-options.php:188
 msgid "Search..."
 msgstr ""
 
-#: customizer/customizer-options.php:192
+#: customizer/customizer-options.php:193
 msgid "No Search Results Found Heading"
 msgstr ""
 
-#: customizer/customizer-options.php:195
+#: customizer/customizer-options.php:196
 msgid "Nothing Found!"
 msgstr ""
 
-#: customizer/customizer-options.php:199
+#: customizer/customizer-options.php:200
 msgid "No Search Results Found Message"
 msgstr ""
 
-#: customizer/customizer-options.php:202
+#: customizer/customizer-options.php:203
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with "
 "some different keywords."
 msgstr ""
 
-#: customizer/customizer-options.php:211
+#: customizer/customizer-options.php:212
 msgid "Slider"
 msgstr ""
 
-#: customizer/customizer-options.php:222
+#: customizer/customizer-options.php:223
 msgid "Choose a Slider"
 msgstr ""
 
-#: customizer/customizer-options.php:234
+#: customizer/customizer-options.php:235
 msgid ""
 "<a href=\"https://www.outtheboxthemes.com/documentation/shopstar/"
 "homepage-slider/default-slider/\" rel=\"nofollow\" target=\"_blank"
 "\">Read a guide on how to set up the Default Slider</a>"
 msgstr ""
 
-#: customizer/customizer-options.php:242
+#: customizer/customizer-options.php:243
 msgid ""
 "<a href=\"https://www.outtheboxthemes.com/documentation/shopstar/"
 "homepage-slider/slider-plugin/\" rel=\"nofollow\" target=\"_blank"
 "\">Read a guide on using a slider plugin</a>"
 msgstr ""
 
-#: customizer/customizer-options.php:247
+#: customizer/customizer-options.php:248
 msgid "Slider Categories"
 msgstr ""
 
-#: customizer/customizer-options.php:250
+#: customizer/customizer-options.php:251
 msgid ""
 "Select the categories of the posts you want to display in the slider. "
 "The featured image will be the slide image and the post content will "
@@ -239,48 +239,48 @@ msgid ""
 "to select multiple categories."
 msgstr ""
 
-#: customizer/customizer-options.php:255
+#: customizer/customizer-options.php:256
 msgid "Slider has a minimum width"
 msgstr ""
 
-#: customizer/customizer-options.php:263
+#: customizer/customizer-options.php:264
 msgid "Minimum Width"
 msgstr ""
 
-#: customizer/customizer-options.php:271
+#: customizer/customizer-options.php:272
 msgid "Slide Transition Speed"
 msgstr ""
 
-#: customizer/customizer-options.php:275
+#: customizer/customizer-options.php:276
 msgid ""
 "The speed it takes to transition between slides in milliseconds. 1000 "
 "milliseconds equals 1 second."
 msgstr ""
 
-#: customizer/customizer-options.php:280
+#: customizer/customizer-options.php:281
 msgid "Slider Shortcode"
 msgstr ""
 
-#: customizer/customizer-options.php:283
+#: customizer/customizer-options.php:284
 msgid "Enter the shortcode given by the slider plugin you're using."
 msgstr ""
 
-#: customizer/customizer-options.php:292
+#: customizer/customizer-options.php:293
 msgid "Header Image"
 msgstr ""
 
-#: customizer/customizer-options.php:298
+#: customizer/customizer-options.php:299
 msgid ""
 "Please note: The header image will not display on your site as the "
 "slider is currently enabled. To make the header image visible you will "
 "first need to disable the slider."
 msgstr ""
 
-#: customizer/customizer-options.php:307
+#: customizer/customizer-options.php:308
 msgid "Text"
 msgstr ""
 
-#: customizer/customizer-options.php:310
+#: customizer/customizer-options.php:311
 msgid ""
 "<h2>Fashion is what you buy</h2><p>Style is what you do with it</"
 "p><p><a href=\"https://www.outtheboxthemes.com/wordpress-themes/"
@@ -288,179 +288,184 @@ msgid ""
 "Now</a></p>"
 msgstr ""
 
-#: customizer/customizer-options.php:311
+#: customizer/customizer-options.php:312
 msgid ""
 "Use <h2></h2> tags around heading text and <p></p> tags around body "
 "text."
 msgstr ""
 
-#: customizer/customizer-options.php:323 functions.php:705
+#: customizer/customizer-options.php:324 functions.php:705
 msgid "WooCommerce"
 msgstr ""
 
-#: customizer/customizer-options.php:339
+#: customizer/customizer-options.php:340
 msgid "Shop Links"
 msgstr ""
 
-#: customizer/customizer-options.php:343
+#: customizer/customizer-options.php:344
 msgid ""
 "Display the My Account and Checkout links in the Top Bar when "
 "WooCommerce is active."
 msgstr ""
 
-#: customizer/customizer-options.php:352
+#: customizer/customizer-options.php:353
 msgid "Product Catalog"
 msgstr ""
 
-#: customizer/customizer-options.php:359
-#: customizer/customizer-options.php:387
-#: customizer/customizer-options.php:413
+#: customizer/customizer-options.php:360
+#: customizer/customizer-options.php:388
+#: customizer/customizer-options.php:414
 msgid "Full width"
 msgstr ""
 
-#: customizer/customizer-options.php:368
+#: customizer/customizer-options.php:369
 msgid "Products per page"
 msgstr ""
 
-#: customizer/customizer-options.php:372
+#: customizer/customizer-options.php:373
 msgid "How many products should be shown per page?"
 msgstr ""
 
-#: customizer/customizer-options.php:380
+#: customizer/customizer-options.php:381
 msgid "Product"
 msgstr ""
 
-#: customizer/customizer-options.php:395
+#: customizer/customizer-options.php:396
 msgid "Enable zoom on product image"
 msgstr ""
 
-#: customizer/customizer-options.php:406
+#: customizer/customizer-options.php:407
 msgid "Product Category and Tag Page"
 msgstr ""
 
-#: customizer/customizer-options.php:428
+#: customizer/customizer-options.php:429
 msgid "Colors"
 msgstr ""
 
-#: customizer/customizer-options.php:434
+#: customizer/customizer-options.php:435
 msgid "Primary Color"
 msgstr ""
 
-#: customizer/customizer-options.php:442
+#: customizer/customizer-options.php:443
 msgid "Slider Prev / Next Button Color"
 msgstr ""
 
-#: customizer/customizer-options.php:450
+#: customizer/customizer-options.php:451
 msgid "Button Color"
 msgstr ""
 
-#: customizer/customizer-options.php:458
+#: customizer/customizer-options.php:459
 msgid "Footer Color"
 msgstr ""
 
-#: customizer/customizer-options.php:470
+#: customizer/customizer-options.php:471
 msgid "Fonts"
 msgstr ""
 
-#: customizer/customizer-options.php:480
+#: customizer/customizer-options.php:481
 msgid "Site Title"
 msgstr ""
 
-#: customizer/customizer-options.php:487
-#: customizer/customizer-options.php:564
-#: customizer/customizer-options.php:608
+#: customizer/customizer-options.php:488
+#: customizer/customizer-options.php:565
+#: customizer/customizer-options.php:609
 msgid "Font"
 msgstr ""
 
-#: customizer/customizer-options.php:495
-#: customizer/customizer-options.php:513
-#: customizer/customizer-options.php:538
-#: customizer/customizer-options.php:590
-#: customizer/customizer-options.php:616
+#: customizer/customizer-options.php:496
+#: customizer/customizer-options.php:514
+#: customizer/customizer-options.php:539
+#: customizer/customizer-options.php:591
+#: customizer/customizer-options.php:617
+#: customizer/customizer-options.php:651
 msgid "Color"
 msgstr ""
 
-#: customizer/customizer-options.php:506
+#: customizer/customizer-options.php:507
 msgid "Navigation Menu"
 msgstr ""
 
-#: customizer/customizer-options.php:520
+#: customizer/customizer-options.php:521
 msgid "Rollover Color"
 msgstr ""
 
-#: customizer/customizer-options.php:531
+#: customizer/customizer-options.php:532
 msgid "Slider / Header Image"
 msgstr ""
 
-#: customizer/customizer-options.php:546
+#: customizer/customizer-options.php:547
 msgid "Display a drop shadow on the slider / header image text."
 msgstr ""
 
-#: customizer/customizer-options.php:557
+#: customizer/customizer-options.php:558
 msgid "Heading"
 msgstr ""
 
-#: customizer/customizer-options.php:581
+#: customizer/customizer-options.php:582
 msgid "Weight"
 msgstr ""
 
-#: customizer/customizer-options.php:601
+#: customizer/customizer-options.php:602
 msgid "Body Text"
 msgstr ""
 
-#: customizer/customizer-options.php:624
+#: customizer/customizer-options.php:625
 msgid "Link Color"
 msgstr ""
 
-#: customizer/customizer-options.php:631
+#: customizer/customizer-options.php:632
 msgid "Link Rollover Color"
 msgstr ""
 
-#: customizer/customizer-options.php:642 functions.php:216
+#: customizer/customizer-options.php:644
+msgid "Form Fields"
+msgstr ""
+
+#: customizer/customizer-options.php:662 functions.php:216
 msgid "Blog"
 msgstr ""
 
-#: customizer/customizer-options.php:652
+#: customizer/customizer-options.php:672
 msgid "Archive Layout"
 msgstr ""
 
-#: customizer/customizer-options.php:661
+#: customizer/customizer-options.php:681
 msgid "Excerpt Length"
 msgstr ""
 
-#: customizer/customizer-options.php:669
+#: customizer/customizer-options.php:689
 msgid "Read More Text"
 msgstr ""
 
-#: customizer/customizer-options.php:680
+#: customizer/customizer-options.php:700
 msgid "Website Text"
 msgstr ""
 
-#: customizer/customizer-options.php:685
+#: customizer/customizer-options.php:705
 msgid "404 Page Heading"
 msgstr ""
 
-#: customizer/customizer-options.php:688
+#: customizer/customizer-options.php:708
 msgid "404!"
 msgstr ""
 
-#: customizer/customizer-options.php:692
+#: customizer/customizer-options.php:712
 msgid "404 Page Message"
 msgstr ""
 
-#: customizer/customizer-options.php:695
+#: customizer/customizer-options.php:715
 msgid "The page you were looking for cannot be found!"
 msgstr ""
 
-#: customizer/customizer-options.php:703
+#: customizer/customizer-options.php:723
 msgid "Media"
 msgstr ""
 
-#: customizer/customizer-options.php:709
+#: customizer/customizer-options.php:729
 msgid "Crisp images"
 msgstr ""
 
-#: customizer/customizer-options.php:713
+#: customizer/customizer-options.php:733
 msgid ""
 "<p>This will remove the default anti-aliasing done to scaled images by "
 "browsers creating a more crisp image.</p>"

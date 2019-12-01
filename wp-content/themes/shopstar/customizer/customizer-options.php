@@ -14,6 +14,7 @@ function shopstar_customizer_library_options() {
 	$slider_font_color = '#000000';
 	$heading_font_color = '#000000';
     $body_font_color = '#4F4F4F';
+    $form_input_font_color = '#4F4F4F';
     $link_font_color = '#939598';
     $link_rollover_font_color = '#4F4F4F';
     $slider_control_button_color = '#000000';
@@ -632,6 +633,25 @@ function shopstar_customizer_library_options() {
 	    	'section' => $section,
 	    	'type'    => 'color',
 	    	'default' => $link_rollover_font_color,
+	    );
+	    
+		// Form Fields - Sub-section
+	    $section = 'shopstar-form-field-fonts';
+	    $font_choices = customizer_library_get_font_choices();
+	    
+	    $sections[] = array(
+	    	'id' => $section,
+	    	'title' => __( 'Form Fields', 'shopstar' ),
+	    	'priority' => '35',
+	    	'panel' => $panel
+	    );
+	    
+	    $options['shopstar-form-input-font-color'] = array(
+	    	'id' => 'shopstar-form-input-font-color',
+	    	'label'   => __( 'Color', 'shopstar' ),
+	    	'section' => $section,
+	    	'type'    => 'color',
+	    	'default' => $form_input_font_color
 	    );
     
     // Blog Settings

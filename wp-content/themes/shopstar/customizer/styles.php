@@ -73,7 +73,7 @@ function shopstar_customizer_library_build_styles() {
     			'div.wpforms-container form.wpforms-form input[type="text"]:focus,
 				div.wpforms-container form.wpforms-form input[type="email"]:focus,
 				div.wpforms-container form.wpforms-form input[type="tel"]:focus,
-    			div.wpforms-container form.wpforms-form input[type="number"]:focus,
+				div.wpforms-container form.wpforms-form input[type="number"]:focus,
 				div.wpforms-container form.wpforms-form input[type="url"]:focus,
 				div.wpforms-container form.wpforms-form input[type="password"]:focus,
 				div.wpforms-container form.wpforms-form input[type="search"]:focus,
@@ -82,11 +82,18 @@ function shopstar_customizer_library_build_styles() {
 				input[type="text"]:focus,
 				input[type="email"]:focus,
 				input[type="tel"]:focus,
+				input[type="number"]:focus,
 				input[type="url"]:focus,
 				input[type="password"]:focus,
 				input[type="search"]:focus,
+				input[name="coupon_code"]:focus,
 				textarea:focus,
-				select:focus'
+				select:focus,
+				.woocommerce form .form-row.woocommerce-validated .select2-container:focus,
+				.woocommerce form .form-row.woocommerce-validated input.input-text:focus,
+				.woocommerce form .form-row.woocommerce-validated select:focus,    					
+				.select2.select2-container--default .select2-selection--single[aria-expanded="true"],
+				.select2-container--open .select2-dropdown'
     		),
     		'declarations' => array(
     			'border-color' => $sancolor
@@ -473,61 +480,21 @@ function shopstar_customizer_library_build_styles() {
     			'body,
 				div.wpforms-container form.wpforms-form .wpforms-field-label,
 				div.wpforms-container-full .wpforms-form .wpforms-field-sublabel,
-				div.wpforms-container form.wpforms-form input[type="text"],
-				div.wpforms-container form.wpforms-form input[type="email"],
-				div.wpforms-container form.wpforms-form input[type="tel"],
-    			div.wpforms-container form.wpforms-form input[type="number"],
-				div.wpforms-container form.wpforms-form input[type="url"],
-				div.wpforms-container form.wpforms-form input[type="password"],
-				div.wpforms-container form.wpforms-form input[type="search"],
-				div.wpforms-container form.wpforms-form select,
-				div.wpforms-container form.wpforms-form textarea,
-				input[type="text"],
-				input[type="email"],
-    			input[type="tel"],
-				input[type="url"],
-				input[type="password"],
-				input[type="search"],
-    			select,
-				textarea,
 				article .entry-footer,
 				.site-footer .widgets .widget a,
-				.search-block .search-field,
-				.select2-drop,
-				.select2-container .select2-choice,
-				.select2-results .select2-highlighted,
 				.woocommerce .woocommerce-breadcrumb,
 				.woocommerce-page .woocommerce-breadcrumb,
 				.site-footer .widgets .widget ul li a,
 				.site-footer .widgets .widget .social-icons a,
-				.site-footer .mc4wp-form input[type=date],
-				.site-footer .mc4wp-form input[type=email],
-				.site-footer .mc4wp-form input[type=number],
-				.site-footer .mc4wp-form input[type=tel],
-				.site-footer .mc4wp-form input[type=text],
-				.site-footer .mc4wp-form input[type=url],
-				.site-footer .mc4wp-form select,
-				.site-footer .mc4wp-form textarea,
 				.widget_woocommerce_products .amount,
 				.widget_woocommerce_products del,
 				.woocommerce #reviews #comments ol.commentlist li .meta,
 				.woocommerce-checkout #payment div.payment_box,
 				.woocommerce .woocommerce-info,
-				.woocommerce form .form-row input.input-text,
-				.woocommerce-page form .form-row input.input-text,
-				.woocommerce .woocommerce-ordering select,
-				.woocommerce-page .woocommerce-ordering select,
     			.woocommerce ul.products li.product .price,
 				.woocommerce #content ul.products li.product span.price,
 				.woocommerce-page #content ul.products li.product span.price,
 				.woocommerce div.product p.price del,
-				.woocommerce table.cart input,
-				.woocommerce-page #content table.cart input,
-				.woocommerce-page table.cart input,
-				.woocommerce #content .quantity input.qty,
-				.woocommerce .quantity input.qty,
-				.woocommerce-page #content .quantity input.qty,
-				.woocommerce-page .quantity input.qty,
 				article .entry-meta'
     		),
     		'declarations' => array(
@@ -586,6 +553,53 @@ function shopstar_customizer_library_build_styles() {
     		)
     	) );
     	 
+    }
+    
+	// Form Input Font Color
+    $fontcolor = 'shopstar-form-input-font-color';
+    $fontcolormod = get_theme_mod( $fontcolor, customizer_library_get_default( $fontcolor ) );
+    
+    if ( $fontcolormod !== customizer_library_get_default( $fontcolor ) ) {
+
+        $sanfontcolor = esc_html( $fontcolormod );
+
+        Customizer_Library_Styles()->add( array(
+        	'selectors' => array(
+        		'div.wpforms-container form.wpforms-form input[type="text"],
+				div.wpforms-container form.wpforms-form input[type="email"],
+				div.wpforms-container form.wpforms-form input[type="tel"],
+                div.wpforms-container form.wpforms-form input[type="number"],
+				div.wpforms-container form.wpforms-form input[type="url"],
+				div.wpforms-container form.wpforms-form input[type="password"],
+				div.wpforms-container form.wpforms-form input[type="search"],
+				div.wpforms-container form.wpforms-form select,
+				div.wpforms-container form.wpforms-form textarea,
+				input[type="text"],
+				input[type="email"],
+				input[type="tel"],
+        		input[type="number"],
+				input[type="url"],
+				input[type="password"],
+				input[type="search"],
+                select,
+				textarea,
+				.search-block .search-field,
+				.select2-drop,
+				.select2-container .select2-choice,
+        		.select2-container.select2-container--default .select2-selection--single .select2-selection__rendered,
+        		.select2-container--default .select2-results__option,
+        		.woocommerce .woocommerce-ordering select,
+				.woocommerce-page .woocommerce-ordering select,
+				.woocommerce #content .quantity input.qty,
+				.woocommerce .quantity input.qty,
+				.woocommerce-page #content .quantity input.qty,
+				.woocommerce-page .quantity input.qty'
+        	),
+        	'declarations' => array(
+        		'color' => $sanfontcolor
+        	)
+        ) );
+	
     }
     
     // Link Font Color

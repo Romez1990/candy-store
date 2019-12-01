@@ -87,6 +87,7 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce-page table.cart img {
     width: 100px;
     height: auto;
+	vertical-align: top;
 }
 
 .woocommerce #customer_details,
@@ -145,7 +146,6 @@ Shopstar - Custom WooCommerce Styling
 }
 .woocommerce form .form-row input.input-text,
 .woocommerce-page form .form-row input.input-text {
-    border: 1px solid rgba(0, 0, 0, 0.18);
     background-color: rgba(0, 0, 0, 0.02);
     font-weight: 400;
     font-size: 15px;
@@ -154,7 +154,6 @@ Shopstar - Custom WooCommerce Styling
 }
 .woocommerce form .form-row textarea.input-text,
 .woocommerce-page form .form-row textarea.input-text {
-    border: 1px solid rgba(0, 0, 0, 0.18);
     background-color: rgba(0, 0, 0, 0.02);
     font-weight: 400;
     font-size: 15px;
@@ -217,6 +216,7 @@ Shopstar - Custom WooCommerce Styling
     margin: 0;
     padding: 0 0 0 6px;
 }
+.header-cart-checkout .fa,
 .header-cart-checkout .otb-fa {
     font-size: 20px;
     margin: 0 0 0 2px;
@@ -314,10 +314,16 @@ Shopstar - Custom WooCommerce Styling
 	display: inline-block;
 	vertical-align: top;
 	float: none;
-	width: 15%;
-	width: 22.42%;
 	text-align: center;
 	padding: 30px 0 4px 0;
+}
+
+.woocommerce ul.product_list_widget li {
+	width: 20.75%;
+}
+
+.widget_woocommerce_products ul li {
+	width: 22.42%;
 }
 
 .widget_woocommerce_products ul li:nth-of-type(-n+4) {
@@ -389,11 +395,12 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce button.button:disabled:hover,
 .woocommerce button.button:disabled[disabled]:hover,
 .woocommerce button.button.alt:disabled:hover,
-.woocommerce button.button.alt:disabled[disabled]:hover {
+.woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt.disabled:hover {
 	color: #FFFFFF;
 	border-radius: 0;
 	border: none;
-	border-color: #939598;
 	min-width: 170px;
 	height: 48px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -479,13 +486,13 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce-page .woocommerce-ordering select {
     background: white;
     border-radius: 0;
-    border: 1px solid rgb(220, 220, 220);
     font-size: 12px;
     text-transform: uppercase;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
     padding: 6px;
     font-weight: 600;
     color: rgb(89, 89, 89);
+	width: auto;
 }
 
 .woocommerce .products ul,
@@ -772,11 +779,6 @@ Shopstar - Custom WooCommerce Styling
 	box-shadow: none;
 }
 
-.woocommerce .woocommerce-ordering select,
-.woocommerce-page .woocommerce-ordering select {
-	border: 1px solid #ccc;
-}
-
 /* Sidebar mode */
 
 .post-type-archive-product.woocommerce .widget-area,
@@ -881,7 +883,6 @@ Shopstar - Custom WooCommerce Styling
 	color: #FFFFFF;
 	border-radius: 0;
 	border: none;
-	border-color: #939598;
 	display: table;
 	max-width: 100%;
 	width: auto;
@@ -1053,7 +1054,6 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce-page #content .quantity input.qty,
 .woocommerce-page .quantity input.qty {
     height: 35px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
     background-color: #F5F5F5;
     border-radius: 3px;
 	padding: 0px;
@@ -1248,7 +1248,6 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce-page div.product form.cart .variations select {
     background: white;
     border-radius: 1px;
-    border: 1px solid rgb(220, 220, 220);
     font-size: 12px;
     text-transform: uppercase;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
@@ -1427,8 +1426,6 @@ Shopstar - Custom WooCommerce Styling
     font-weight: 300;
     text-transform: none;
     font-size: 14px;
-    color: #58585a;
-    border: 1px solid #CCC;
 }
 
 
@@ -1513,8 +1510,6 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce .quantity input.qty,
 .woocommerce-page #content .quantity input.qty,
 .woocommerce-page .quantity input.qty {
-	border: 1px solid;
-	border-color: #939598;
 	background: #FFFFFF;
 	border-radius: 0;
 	height: 48px;
@@ -1525,7 +1520,6 @@ Shopstar - Custom WooCommerce Styling
 	color: #FFFFFF;
     border-radius: 0;
     border: none;
-    border-color: #939598;
     width: auto;
 	display: table;
 	width: auto;
@@ -1612,8 +1606,6 @@ Shopstar - Custom WooCommerce Styling
 .woocommerce table.cart input,
 .woocommerce-page #content table.cart input,
 .woocommerce-page table.cart input {
-	border: 1px solid;
-    border-color: #939598;
     background: #FFFFFF;
 }
 
@@ -1638,7 +1630,6 @@ Shopstar - Custom WooCommerce Styling
     top: 0px !important;
 	display: inline-block;
 	border: none;
-    border-color: #939598;
     height: 48px;
     line-height: 1;
     margin: 0 0 0 0;
@@ -1656,11 +1647,13 @@ Shopstar - Custom WooCommerce Styling
     padding: 76px 0 0 2%;
 }
 
+/*
 .woocommerce form .form-row.woocommerce-validated .select2-container,
 .woocommerce form .form-row.woocommerce-validated input.input-text,
 .woocommerce form .form-row.woocommerce-validated select {
-    border-color: #CCC;    
+    border-color: #CCCCCC;    
 }
+*/
 
 .woocommerce form .form-row input.input-text,
 .woocommerce-page form .form-row input.input-text {
@@ -1737,6 +1730,23 @@ Shopstar - Custom WooCommerce Styling
 	color: #515151;
 }
 
+/* Select2 */
+
+.select2.select2-container--default .select2-selection--single {
+	border-radius: 0;
+	height: 46px;
+	border-color: #CCCCCC;
+	text-indent: 7px;
+}
+
+.select2.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 44px;
+}
+
+.select2.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 44px;
+}
+
 /* -------- Yotpo Reviews plugin -------- */
 
 .yotpo .pull-left {
@@ -1759,63 +1769,6 @@ Shopstar - Custom WooCommerce Styling
 }
 
 /* -------- Responsive -------- */
-
-@media screen and (max-width: 980px) {
-
-    .woocommerce #container,
-    .woocommerce-page #container,
-	.woocommerce .content-area,
-    .woocommerce-page .content-area {
-        width: 100%;
-        float: none;
-    	padding: 0;
-	}
-
-    .widget-area {
-		width: 100%;
-    	padding-left: 0;
-    	padding-right: 0;
-    	float: none;
-    }
-
-	.woocommerce ul.products li.product:nth-child(odd),
-    .woocommerce-page ul.products li.product:nth-child(odd) {
-		clear: left !important;
-    	margin-left: 0 !important;
-    	margin-right: 1% !important;
-	}
-
-	.woocommerce ul.products li.product:nth-child(even),
-	.woocommerce-page ul.products li.product:nth-child(even) {
-		clear: right !important;
-		margin-left: 1% !important;
-		margin-right: 0 !important;
-	}   
-
-	.woocommerce.columns-4 ul.products li.product,
-	body.full-width ul.products li.product,
-    .woocommerce ul.products li.product,
-    .woocommerce-page ul.products li.product,
-    .post-type-archive-product.woocommerce.shopstar-shop-full-width ul.products li.product,
-	.post-type-archive-product.woocommerce.shopstar-shop-full-width ul.products li.product,
-	.archive.woocommerce.shopstar-shop-full-width ul.products li.product {
-        width: 48% !important;
-        margin: 0 0.9% 22px !important;
-    }
-    
-	.post-type-archive-product.woocommerce .widget-area,
-	.post-type-archive-product.woocommerce-page .widget-area,
-	.single-product.woocommerce .widget-area,
-	.single-product.woocommerce-page .widget-area {
-		padding-top: 20px;
-	}    
-	
-    .woocommerce .content-has-sidebar ul.products,
-    .woocommerce-page .content-has-sidebar ul.products {
-        margin: 0 -1% 30px;
-    }
-    
-}
 
 @media screen and (max-width: 972px) {
 	
@@ -1901,6 +1854,63 @@ Shopstar - Custom WooCommerce Styling
 
 @media screen and (max-width: 780px) {
 
+    .woocommerce #container,
+    .woocommerce-page #container,
+	.woocommerce .content-area,
+    .woocommerce-page .content-area {
+        width: 100%;
+        float: none;
+    	padding: 0;
+	}
+
+    .widget-area {
+		width: 100%;
+    	padding-left: 0;
+    	padding-right: 0;
+    	float: none;
+    }
+
+	.woocommerce ul.products li.product:nth-child(odd),
+    .woocommerce-page ul.products li.product:nth-child(odd) {
+		clear: left !important;
+    	margin-left: 0 !important;
+    	margin-right: 1% !important;
+	}
+
+	.woocommerce ul.products li.product:nth-child(even),
+	.woocommerce-page ul.products li.product:nth-child(even) {
+		clear: right !important;
+		margin-left: 1% !important;
+		margin-right: 0 !important;
+	}   
+
+	.woocommerce.columns-4 ul.products li.product,
+	body.full-width ul.products li.product,
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product,
+    .post-type-archive-product.woocommerce.shopstar-shop-full-width ul.products li.product,
+	.post-type-archive-product.woocommerce.shopstar-shop-full-width ul.products li.product,
+	.archive.woocommerce.shopstar-shop-full-width ul.products li.product {
+        width: 48% !important;
+        margin: 0 0.9% 22px !important;
+    }
+    
+	.post-type-archive-product.woocommerce .widget-area,
+	.post-type-archive-product.woocommerce-page .widget-area,
+	.single-product.woocommerce .widget-area,
+	.single-product.woocommerce-page .widget-area {
+		padding-top: 20px;
+	}    
+	
+    .woocommerce .content-has-sidebar ul.products,
+    .woocommerce-page .content-has-sidebar ul.products {
+        margin: 0 -1% 30px;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+
 	/* -------- Products Widget -------- */
 	.woocommerce ul.product_list_widget li, .widget_woocommerce_products ul li {
 		width: 100%;
@@ -1920,6 +1930,7 @@ Shopstar - Custom WooCommerce Styling
 		padding: 0 0 0 7px;
 	}
 
+	.header-cart-checkout .fa,
 	.header-cart-checkout .otb-fa {
 		font-size: 15px;
 	}

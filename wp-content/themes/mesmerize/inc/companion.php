@@ -45,15 +45,20 @@ class Companion_Plugin {
 	}
 
 	public static function companion_disable_popup() {
+		$option =  "mesmerize_companion_disable_popup" ;
+		
 		$nonce = isset( $_POST['companion_disable_popup_wpnonce'] ) ? $_POST['companion_disable_popup_wpnonce'] : '';
 
 		if ( ! wp_verify_nonce( $nonce, "companion_disable_popup" ) ) {
 			die( "wrong nonce" );
 		}
 
-		$value  = intval( isset( $_POST['value'] ) ? $_POST['value'] : 0 );
-		$option = sanitize_text_field( isset( $_POST['option'] ) ? $_POST['option'] : "mesmerize_companion_disable_popup" );
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( __( 'Sorry, you are not allowed to manage options for this site.', 'mesmerize' ) );
+		}
 
+		$value  = intval( isset( $_POST['value'] ) ? $_POST['value'] : 0 );
+	
 		update_option( $option, $value );
 	}
 

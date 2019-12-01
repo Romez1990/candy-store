@@ -3,7 +3,7 @@ Contributors: Out the Box
 Donate link: 
 Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, wide-blocks, e-commerce, photography, portfolio
 Requires at least: 4.5
-Tested up to: 5.2.4
+Tested up to: 5.3
 Requires PHP: 5.3
 Stable tag: 3.7
 License: GPLv3 or later
@@ -95,6 +95,17 @@ View the theme settings under "Appearance" -> Customize.
 2. Featured Images work best at a minimum of 1100 wide and 420 high.
 
 == Changelog ==
+
+#### 1.0.74
+* New: Added a setting to set the font color of form fields
+* Updated the styling of the orderby dropdown on the WooCommerce shop page
+* Fix: Updated the line height of footer widget titles for better readability of two-line titles
+* Fix: Fixed a styling issue with the border color of form fields when in focus
+* Fix: Fixed a styling issue with the submit button of the search and product search widgets
+* Fix: Fixed a styling issue with the select form element on the WooCommerce cart page
+* Fix: Fixed a styling inconsistency with the border color of WooCommerce form fields
+* Fix: Fixed an issue with the border color of form fields on the WooCommerce checkout page not changing when validated and in focus
+* Fix: Fixed an issue with the border color of invalid form fields on the WooCommerce checkout page not changing
 
 #### 1.0.73
 * Removed the dismissible admin notification about our Halloween sale

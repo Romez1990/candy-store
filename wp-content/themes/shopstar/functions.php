@@ -6,7 +6,7 @@
  *
  * @package shopstar
  */
-define( 'SHOPSTAR_THEME_VERSION' , '1.0.73' );
+define( 'SHOPSTAR_THEME_VERSION' , '1.0.74' );
 
 global $shopstar_demo_slides;
 
