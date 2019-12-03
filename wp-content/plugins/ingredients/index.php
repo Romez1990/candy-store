@@ -6,43 +6,29 @@
  */
 
 add_action('init', 'init_ingredients');
-
 function init_ingredients() {
-    register_ingredients_post_type();
-    register_units_taxonomy();
-}
-
-function register_ingredients_post_type() {
-    $labels = [
-        'name' => 'Ингридиенты',
-        'singular_name' => 'Ингридиент',
-        'add_new' => 'Добавить новый',
-        'add_new_item' => 'Добавить интридиент',
-    ];
-    $args = [
-        'labels' => $labels,
+    register_post_type('ingredients', [
+        'labels' => [
+            'name' => 'Ингридиенты',
+            'singular_name' => 'Ингридиент',
+            'add_new' => 'Добавить новый',
+            'add_new_item' => 'Добавить интридиент',
+        ],
         'description' => 'Ингридиенты для товаров',
         'public' => true,
         'menu_icon' => 'dashicons-filter',
         'menu_position' => 56,
         'supports' => ['title'],
-    ];
-    register_post_type('ingredients', $args);
-}
-
-function register_units_taxonomy() {
-    $labels = [
-        'name' => 'Единицы измерения',
-        'singular_name' => 'Единица измерения',
-    ];
-    $args = [
-        'labels' => $labels,
-    ];
-    register_taxonomy('units', 'ingredients', $args);
+    ]);
+    register_taxonomy('units', 'ingredients', [
+        'labels' => [
+            'name' => 'Единицы измерения',
+            'singular_name' => 'Единица измерения',
+        ],
+    ]);
 }
 
 add_action('woocommerce_product_options_pricing', 'init_ingredients_admin');
-
 function init_ingredients_admin() {
     ?>
     <h2>Ингридиенты</h2>
@@ -50,11 +36,6 @@ function init_ingredients_admin() {
     global $post;
     $json = get_post_meta($post->ID, 'ingredients_array', true);
     $ingredients_array = json_decode($json);
-    ?>
-    <script>
-        let ingredientsArray = <?php echo json_encode($ingredients_array); ?>
-    </script>
-    <?php
 
     $ingredients = [];
     $query = new WP_Query([
@@ -69,11 +50,22 @@ function init_ingredients_admin() {
     }
     wp_reset_query();
     ?>
-    <div id="ingredients">
-    </div>
+
+    <div id="ingredients"></div>
     <input type="button" class="button" id="add-ingredient"
            style="margin: 1% 0 2% 2%" value="Добавить">
     <script>
+        let ingredients = <?php echo json_encode($ingredients); ?>;
+        let ingredientsArray = <?= json_encode($ingredients_array); ?>;
+        Object.entries(ingredientsArray).forEach((ingredient) => {
+            const ingredientId = ingredient[0];
+            const ingredientAmount = ingredient[1];
+            createIngredient(ingredientId, ingredientAmount);
+        });
+        const addIngredientButton = document.querySelector('#add-ingredient');
+        addIngredientButton.addEventListener('click', () => {
+            createIngredient();
+        });
         const ingredientsElement = document.querySelector('#ingredients');
 
         function createIngredient(ingredientId = '', ingredientAmount = '0') {
@@ -122,24 +114,11 @@ function init_ingredients_admin() {
             const ingredientBlock = button.parentElement;
             ingredientBlock.remove();
         }
-
-        let ingredients = <?php echo json_encode($ingredients); ?>;
-        Object.entries(ingredientsArray).forEach((ingredient) => {
-            const ingredientId = ingredient[0];
-            const ingredientAmount = ingredient[1];
-            createIngredient(ingredientId, ingredientAmount);
-        });
-
-        const addIngredientButton = document.querySelector('#add-ingredient');
-        addIngredientButton.addEventListener('click', () => {
-            createIngredient();
-        });
     </script>
     <?php
 }
 
 add_action('woocommerce_process_product_meta', 'save_product_ingredients', 10);
-
 function save_product_ingredients($post_id) {
     $ingredients_to_save = $_POST['ingredients'];
     $amounts_to_save = $_POST['amounts'];
@@ -202,7 +181,6 @@ function unit_meta_box() {
 }
 
 add_action('save_post', 'save_unit', 10);
-
 function save_unit($post_id) {
     $unit_id = $_POST['unit'];
     $coast = $_POST['coast'];
@@ -221,7 +199,6 @@ function add_ingredients_meta_box() {
         'shop_order',
     );
 }
-
 function ingredients_meta_box($order) {
     $order = wc_get_order($order->ID);
     $items = $order->get_items();
