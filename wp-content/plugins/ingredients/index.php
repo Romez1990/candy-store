@@ -9,12 +9,12 @@ add_action('init', 'init_ingredients');
 function init_ingredients() {
     register_post_type('ingredients', [
         'labels' => [
-            'name' => 'Ингридиенты',
-            'singular_name' => 'Ингридиент',
+            'name' => 'Ингредиенты',
+            'singular_name' => 'Ингредиент',
             'add_new' => 'Добавить новый',
             'add_new_item' => 'Добавить интридиент',
         ],
-        'description' => 'Ингридиенты для товаров',
+        'description' => 'Ингредиенты для товаров',
         'public' => true,
         'menu_icon' => 'dashicons-filter',
         'menu_position' => 56,
@@ -31,11 +31,10 @@ function init_ingredients() {
 add_action('woocommerce_product_options_pricing', 'init_ingredients_admin');
 function init_ingredients_admin() {
     ?>
-    <h2>Ингридиенты</h2>
+    <h2>Ингредиенты</h2>
     <?php
     global $post;
-    $json = get_post_meta($post->ID, 'ingredients_array', true);
-    $ingredients_array = json_decode($json);
+    $ingredients_array = get_post_meta($post->ID, 'ingredients_array', true);
 
     $ingredients = [];
     $query = new WP_Query([
@@ -55,8 +54,8 @@ function init_ingredients_admin() {
     <input type="button" class="button" id="add-ingredient"
            style="margin: 1% 0 2% 2%" value="Добавить">
     <script>
-        let ingredients = <?php echo json_encode($ingredients); ?>;
-        let ingredientsArray = <?= json_encode($ingredients_array); ?>;
+        let ingredients = <?= json_encode($ingredients) ?>;
+        let ingredientsArray = <?= $ingredients_array ?>;
         Object.entries(ingredientsArray).forEach((ingredient) => {
             const ingredientId = ingredient[0];
             const ingredientAmount = ingredient[1];
@@ -149,7 +148,7 @@ function unit_meta_box() {
         'hide_empty' => false,
     ]);
     $units = [];
-    foreach ($units_query->get_terms() as $unit){
+    foreach ($units_query->get_terms() as $unit) {
         $units[$unit->term_id] = $unit->name;
     }
     ?>
@@ -160,7 +159,7 @@ function unit_meta_box() {
             foreach ($units as $unit_id => $unit_name) {
                 ?>
                 <option value="<?= $unit_id ?>"
-                <?php if ($unit_id === intval($saved_unit_id)) echo 'selected'; ?>>
+                    <?php if ($unit_id === intval($saved_unit_id)) echo 'selected'; ?>>
                     <?= $unit_name ?>
                 </option>
                 <?php
@@ -169,14 +168,14 @@ function unit_meta_box() {
         </select>
     </p>
     <?php
-    woocommerce_wp_text_input( [
-       'id'                => 'coast',
-       'label'             => 'Стоимость',
-       'placeholder'       => 'Стоимость',
-       'type'              => 'number',
-       'custom_attributes' => [
-          'min' => '0',
-       ],
+    woocommerce_wp_text_input([
+        'id' => 'coast',
+        'label' => 'Стоимость',
+        'placeholder' => 'Стоимость',
+        'type' => 'number',
+        'custom_attributes' => [
+            'min' => '0',
+        ],
     ]);
 }
 
@@ -194,7 +193,7 @@ add_action('add_meta_boxes', 'add_ingredients_meta_box', 1);
 function add_ingredients_meta_box() {
     add_meta_box(
         'ingredients_meta_box',
-        'Ингридиенты',
+        'Ингредиенты',
         'ingredients_meta_box',
         'shop_order',
     );
@@ -207,8 +206,8 @@ function ingredients_meta_box($order) {
     foreach ($items as $item) {
         $product_id = $item['product_id'];
         $product_ingredients = json_decode(get_post_meta($product_id, 'ingredients_array')[0]);
-        foreach($product_ingredients as $ingredient_id => $amount) {
-            $amount = (float) str_replace (',', '.', $amount);
+        foreach ($product_ingredients as $ingredient_id => $amount) {
+            $amount = (float)str_replace(',', '.', $amount);
             if (!isset($ingredients[$ingredient_id]))
                 $ingredients[$ingredient_id] = $amount;
             else
@@ -230,39 +229,39 @@ function ingredients_meta_box($order) {
     </style>
     <table class="ingredients-table" width="100%">
         <thead>
-            <tr>
-                <th class="ingredient-name" width="55%">Ингридиент</th>
-                <th class="cost" width="15%">Стоимость</th>
-                <th class="quantity" width="15%">Кол-во</th>
-                <th class="total-cost" width="15%">Итого</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php
-            foreach ($ingredients as $ingredient_id => $amount) {
-                $ingredient_name = get_the_title($ingredient_id);
-                $ingredient_coast = get_post_meta($ingredient_id, 'coast')[0];
-                $unit_id = get_post_meta($ingredient_id, 'unit')[0];
-                $unit_name = get_term($unit_id)->name;
-                $total_coast = $ingredient_coast * $amount;
-                $total += $total_coast;
-                ?>
-                <tr>
-                    <td class="ingredient-name"><?= $ingredient_name ?></td>
-                    <td class="cost"><?= $ingredient_coast ?>&nbsp;₽</td>
-                    <td class="quantity"><?= $amount ?> <?= $unit_name ?></td>
-                    <td class="total-cost"><?= $total_coast ?> ₽</td>
-                </tr>
-                <?php
-            }
+        <tr>
+            <th class="ingredient-name" width="55%">Ингредиент</th>
+            <th class="cost" width="15%">Стоимость</th>
+            <th class="quantity" width="15%">Кол-во</th>
+            <th class="total-cost" width="15%">Итого</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        foreach ($ingredients as $ingredient_id => $amount) {
+            $ingredient_name = get_the_title($ingredient_id);
+            $ingredient_coast = get_post_meta($ingredient_id, 'coast')[0];
+            $unit_id = get_post_meta($ingredient_id, 'unit')[0];
+            $unit_name = get_term($unit_id)->name;
+            $total_coast = $ingredient_coast * $amount;
+            $total += $total_coast;
             ?>
             <tr>
-                <td></td>
-                <td></td>
-                <td>Итого:</td>
-                <td><?= $total ?> ₽</td>
+                <td class="ingredient-name"><?= $ingredient_name ?></td>
+                <td class="cost"><?= $ingredient_coast ?>&nbsp;₽</td>
+                <td class="quantity"><?= $amount ?> <?= $unit_name ?></td>
+                <td class="total-cost"><?= $total_coast ?> ₽</td>
             </tr>
-            </tbody>
-        </table>
+            <?php
+        }
+        ?>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Итого:</td>
+            <td><?= $total ?> ₽</td>
+        </tr>
+        </tbody>
+    </table>
     <?php
 }
