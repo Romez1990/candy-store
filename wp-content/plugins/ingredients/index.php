@@ -30,9 +30,6 @@ function init_ingredients() {
 
 add_action('woocommerce_product_options_pricing', 'init_ingredients_admin');
 function init_ingredients_admin() {
-    ?>
-    <h2>Ингредиенты</h2>
-    <?php
     global $post;
     $ingredients_array = get_post_meta($post->ID, 'ingredients_array', true);
 
@@ -50,6 +47,7 @@ function init_ingredients_admin() {
     wp_reset_query();
     ?>
 
+    <h2>Ингредиенты</h2>
     <div id="ingredients"></div>
     <input type="button" class="button" id="add-ingredient"
            style="margin: 1% 0 2% 2%" value="Добавить">
