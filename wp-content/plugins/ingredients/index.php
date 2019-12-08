@@ -54,17 +54,6 @@ function init_ingredients_admin() {
     <input type="button" class="button" id="add-ingredient"
            style="margin: 1% 0 2% 2%" value="Добавить">
     <script>
-        let ingredients = <?= json_encode($ingredients) ?>;
-        let ingredientsArray = <?= $ingredients_array ?>;
-        Object.entries(ingredientsArray).forEach((ingredient) => {
-            const ingredientId = ingredient[0];
-            const ingredientAmount = ingredient[1];
-            createIngredient(ingredientId, ingredientAmount);
-        });
-        const addIngredientButton = document.querySelector('#add-ingredient');
-        addIngredientButton.addEventListener('click', () => {
-            createIngredient();
-        });
         const ingredientsElement = document.querySelector('#ingredients');
 
         function createIngredient(ingredientId = '', ingredientAmount = '0') {
@@ -113,6 +102,18 @@ function init_ingredients_admin() {
             const ingredientBlock = button.parentElement;
             ingredientBlock.remove();
         }
+
+        let ingredients = <?= json_encode($ingredients) ?>;
+        let ingredientsArray = <?= $ingredients_array ?>;
+        Object.entries(ingredientsArray).forEach((ingredient) => {
+            const ingredientId = ingredient[0];
+            const ingredientAmount = ingredient[1];
+            createIngredient(ingredientId, ingredientAmount);
+        });
+        const addIngredientButton = document.querySelector('#add-ingredient');
+        addIngredientButton.addEventListener('click', () => {
+            createIngredient();
+        });
     </script>
     <?php
 }
