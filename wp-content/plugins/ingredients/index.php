@@ -32,6 +32,8 @@ add_action('woocommerce_product_options_pricing', 'init_ingredients_admin');
 function init_ingredients_admin() {
     global $post;
     $ingredients_array = get_post_meta($post->ID, 'ingredients_array', true);
+    if (!$ingredients_array)
+        $ingredients_array = [];
 
     $ingredients = [];
     $query = new WP_Query([
