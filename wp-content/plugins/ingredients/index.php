@@ -39,6 +39,7 @@ function init_ingredients_admin() {
     $query = new WP_Query([
         'post_type' => 'ingredients',
         'post_status' => 'publish',
+        'posts_per_page' => 10000,
     ]);
     while ($query->have_posts()) {
         $query->the_post();
