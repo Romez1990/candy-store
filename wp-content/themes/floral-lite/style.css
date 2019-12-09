@@ -5,7 +5,7 @@ Theme URI: https://gretathemes.com/wordpress-themes/floral/
 Author: GretaThemes
 Author URI: https://gretathemes.com
 Description: Floral is a beautiful WordPress blog theme for personal blogs. Floral has a modern, clean and elegant look and lots of customization for bloggers. Built on the latest technology of WordPress, Floral is lightweight, fast and optimized for all mobile phones.
-Version: 1.1.2
+Version: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: floral-lite
@@ -660,7 +660,6 @@ caption a:hover {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
 
@@ -957,8 +956,7 @@ a:visited, a:hover, a:active, a:focus {
 	left: 24px;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transform: translateY(10px);
-	        transform: translateY(10px);
+	transform: translateY(10px);
 	z-index: 99999;
 	transition: all .3s;
 	background: #fff;
@@ -998,8 +996,7 @@ a:visited, a:hover, a:active, a:focus {
 .main-navigation ul li.focus > ul {
 	opacity: 1;
 	visibility: visible;
-	-webkit-transform: translateY(0);
-	        transform: translateY(0);
+	transform: translateY(0);
 }
 
 .main-navigation ul > a {
@@ -1116,7 +1113,6 @@ a:visited, a:hover, a:active, a:focus {
 
 .mobile-menu {
 	visibility: visible;
-	-webkit-transform: translate3d(-100%, 0, 0);
 	transform: translate3d(-100%, 0, 0);
 	transition: all .3s;
 	width: 240px;
@@ -1205,13 +1201,11 @@ a:visited, a:hover, a:active, a:focus {
 }
 
 .mobile-menu .dropdown-toggle.toggled-on {
-	-webkit-transform: rotate(-180deg);
-	        transform: rotate(-180deg);
+	transform: rotate(-180deg);
 }
 
 .mobile-menu-open .mobile-menu {
 	visibility: visible;
-	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	cursor: pointer;
 	z-index: 999999;
@@ -3024,7 +3018,8 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide,
 .entry-content blockquote.alignfull,
 .entry-content blockquote.alignleft,
-.entry-content blockquote.alignright {
+.entry-content blockquote.alignright,
+.entry-content blockquote.is-style-large {
 	font-style: italic;
 	font-size: 24px;
 	font-size: 2.4rem;
@@ -3033,7 +3028,7 @@ body.page .entry-title:before {
 	background: #111;
 	color: #fff;
 	padding: 22px 30px 26px;
-	margin: 0 0 5px 0;
+	margin: 0;
 }
 
 .entry-content blockquote a,
@@ -3042,7 +3037,8 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide a,
 .entry-content blockquote.alignfull a,
 .entry-content blockquote.alignleft a,
-.entry-content blockquote.alignright a {
+.entry-content blockquote.alignright a,
+.entry-content blockquote.is-style-large a {
 	color: #888888;
 	transition: all .3s;
 }
@@ -3053,7 +3049,8 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide a:hover,
 .entry-content blockquote.alignfull a:hover,
 .entry-content blockquote.alignleft a:hover,
-.entry-content blockquote.alignright a:hover {
+.entry-content blockquote.alignright a:hover,
+.entry-content blockquote.is-style-large a:hover {
 	color: #fff;
 }
 
@@ -3063,9 +3060,12 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide p,
 .entry-content blockquote.alignfull p,
 .entry-content blockquote.alignleft p,
-.entry-content blockquote.alignright p {
+.entry-content blockquote.alignright p,
+.entry-content blockquote.is-style-large p {
 	padding: 0;
 	margin: 0;
+	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 .entry-content blockquote cite,
@@ -3074,13 +3074,13 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide cite,
 .entry-content blockquote.alignfull cite,
 .entry-content blockquote.alignleft cite,
-.entry-content blockquote.alignright cite {
+.entry-content blockquote.alignright cite,
+.entry-content blockquote.is-style-large cite {
 	text-align: right;
 	display: block;
 	font-size: 20px;
 	font-size: 2rem;
 	padding-top: 15px;
-	color: #ccc;
 }
 
 .entry-content blockquote cite:before,
@@ -3089,9 +3089,89 @@ body.page .entry-title:before {
 .entry-content blockquote.alignwide cite:before,
 .entry-content blockquote.alignfull cite:before,
 .entry-content blockquote.alignleft cite:before,
-.entry-content blockquote.alignright cite:before {
+.entry-content blockquote.alignright cite:before,
+.entry-content blockquote.is-style-large cite:before {
 	content: '-';
 	padding-right: 10px;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color {
+	padding: 0;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color cite {
+	font-style: italic;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color blockquote {
+	max-width: 100%;
+	background-color: transparent;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color blockquote p {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.alignleft blockquote p, .entry-content .wp-block-pullquote.is-style-solid-color.alingright blockquote p {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-strong-cyan-background-color {
+	background-color: #00a6b6;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-slightly-desaturated-pink-background-color {
+	background-color: #cc95b5;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-vivid-blue-background-color {
+	background-color: #1991f0;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-strong-chartreuse-green-background-color {
+	background-color: #6ca53a;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-slightly-desaturated-orange-background-color {
+	background-color: #c9a978;
+}
+
+.entry-content .wp-block-pullquote.is-style-solid-color.has-very-light-blue-background-color {
+	background-color: #7076fe;
+}
+
+.entry-content .wp-block-pullquote.has-text-color cite {
+	color: #ccc;
+}
+
+.entry-content .wp-block-pullquote {
+	padding: 0;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-strong-cyan-color {
+	color: #00a6b6;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-slightly-desaturated-pink-color {
+	color: #cc95b5;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-vivid-blue-color {
+	color: #1991f0;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-strong-chartreuse-green-color {
+	color: #6ca53a;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-slightly-desaturated-orange-color {
+	color: #c9a978;
+}
+
+.entry-content .wp-block-pullquote blockquote.has-text-color.has-very-light-blue-color {
+	color: #7076fe;
 }
 
 figure.wp-block-image.alignleft {
@@ -3109,6 +3189,11 @@ figure.wp-block-pullquote.aligncenter, figure.wp-block-pullquote.alignleft, figu
 figure.wp-block-pullquote.alignleft blockquote cite, figure.wp-block-pullquote.alignright blockquote cite {
 	font-size: 16px;
 	font-size: 1.6rem;
+}
+
+figure.wp-block-pullquote {
+	border-top: 4px solid;
+	border-bottom: 4px solid;
 }
 
 .format-video > iframe,
@@ -3672,29 +3757,24 @@ ol.children {
 	bottom: 5px;
 	content: '';
 	opacity: 0;
-	transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .widget_floral-recent-posts .recent-post__image a:before {
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
-	-webkit-transform: scale(0, 1);
 	transform: scale(0, 1);
 }
 
 .widget_floral-recent-posts .recent-post__image a:after {
 	border-right: 1px solid #fff;
 	border-left: 1px solid #fff;
-	-webkit-transform: scale(1, 0);
 	transform: scale(1, 0);
 }
 
 .widget_floral-recent-posts .recent-post__image a:hover::before,
 .widget_floral-recent-posts .recent-post__image a:hover::after {
 	opacity: 1;
-	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
