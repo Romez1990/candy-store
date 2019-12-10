@@ -65,15 +65,26 @@ function init_ingredients_admin() {
             select.setAttribute('style', 'margin: 1% 1% 0 2%; width: 41%');
             select.setAttribute('name', 'ingredients[]');
             select.setAttribute('class', 'select short ingredients');
-            Object.entries(ingredients).forEach((ingredient) => {
-                const currentIngredientId = ingredient[0];
-                const currentIngredientAmount = ingredient[1];
+
+            function createOption(ingredient, isDefault = false) {
                 const option = document.createElement("option");
-                if (ingredientId === currentIngredientId)
-                    option.setAttribute('selected', 'selected');
-                option.value = currentIngredientId;
-                option.text = currentIngredientAmount;
+                if (!isDefault) {
+                    const currentIngredientId = ingredient[0];
+                    const currentIngredientAmount = ingredient[1];
+                    if (ingredientId === currentIngredientId)
+                        option.setAttribute('selected', 'true');
+                    option.value = currentIngredientId;
+                    option.text = currentIngredientAmount;
+                } else {
+                    option.setAttribute('disabled', 'true');
+                    option.setAttribute('selected', 'true');
+                }
                 select.appendChild(option);
+            }
+
+            createOption(null, true);
+            Object.entries(ingredients).forEach((ingredient) => {
+                createOption(ingredient);
             });
             div.appendChild(select);
 
@@ -142,6 +153,7 @@ function add_unit_meta_box() {
         'ingredients',
     );
 }
+
 function unit_meta_box() {
     global $post;
     $saved_unit_id = get_post_meta($post->ID, 'unit')[0];
@@ -200,6 +212,7 @@ function add_ingredients_meta_box() {
         'shop_order',
     );
 }
+
 function ingredients_meta_box($order) {
     $order = wc_get_order($order->ID);
     $items = $order->get_items();
