@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Hestia package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-24 19:43:43+0000\n"
+"PO-Revision-Date: 2019-12-09 19:25:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr "Импорт демо-содержимого"
 msgid "or customize the theme"
 msgstr "или настроить тему"
 
-#: inc/customizer/general/class-hestia-header-controls.php:172
+#: inc/customizer/general/class-hestia-header-controls.php:188
 msgid "Posts/Pages Layout"
 msgstr "Макет записей/страниц"
 
@@ -245,7 +245,7 @@ msgstr "Избранные записи"
 msgid "Hey, we've noticed that you're running an outdated version of PHP which is no longer supported. Make sure your site is fast and secure, by upgrading PHP to the latest version."
 msgstr "Эй! Мы заметили, что вы используете устаревшую версию PHP, которая больше не поддерживается. Обновите PHP до последней версии, чтобы убедиться, что ваш сайт быстрый и защищенный."
 
-#: inc/customizer/general/class-hestia-header-controls.php:286
+#: inc/customizer/general/class-hestia-header-controls.php:333
 msgid "Header Settings"
 msgstr "Настройки шапки"
 
@@ -279,7 +279,7 @@ msgstr "Страницы и записи"
 msgid "Content"
 msgstr "Содержимое"
 
-#: inc/customizer/general/class-hestia-header-controls.php:109
+#: inc/customizer/general/class-hestia-header-controls.php:125
 msgid "Enable Search in Menu"
 msgstr "Включить поиск в меню"
 
@@ -306,7 +306,7 @@ msgid "Menu"
 msgstr "Меню"
 
 #: inc/customizer/general/class-hestia-header-controls.php:71
-#: inc/customizer/general/class-hestia-header-controls.php:230
+#: inc/customizer/general/class-hestia-header-controls.php:266
 #: inc/core/class-hestia-public.php:333 inc/core/class-hestia-public.php:488
 msgid "Very Top Bar"
 msgstr "Самая верхняя панель"
@@ -318,8 +318,8 @@ msgstr "Второе"
 
 #: inc/customizer/front-page/class-hestia-big-title-controls.php:274
 #: inc/customizer/general/class-hestia-blog-settings-controls.php:100
-#: inc/customizer/general/class-hestia-header-controls.php:124
-#: inc/customizer/general/class-hestia-header-controls.php:199
+#: inc/customizer/general/class-hestia-header-controls.php:140
+#: inc/customizer/general/class-hestia-header-controls.php:215
 msgid "Layout"
 msgstr "Разметка"
 
@@ -342,7 +342,7 @@ msgstr "Включить значки \"поделиться\""
 msgid "Header Options"
 msgstr "Настройки заголовка"
 
-#: inc/customizer/general/class-hestia-header-controls.php:219
+#: inc/customizer/general/class-hestia-header-controls.php:255
 #: inc/core/class-hestia-public.php:334
 msgid "Navigation"
 msgstr "Навигация"
@@ -761,10 +761,6 @@ msgstr "Поддержка"
 msgid "Changelog"
 msgstr "Список изменений"
 
-#: inc/core/class-hestia-admin.php:200
-msgid "Free vs PRO"
-msgstr "Свободная или Про"
-
 #: inc/core/class-hestia-admin.php:128 inc/core/class-hestia-admin.php:131
 msgid "Contact Support"
 msgstr "Связаться с поддержкой"
@@ -1041,7 +1037,7 @@ msgid "Shop"
 msgstr "Магазин"
 
 #: inc/customizer/front-page/class-hestia-shop-controls.php:83
-#: inc/customizer/general/class-hestia-header-controls.php:199
+#: inc/customizer/general/class-hestia-header-controls.php:215
 #: inc/views/front-page/class-hestia-shop-section.php:72
 msgid "Products"
 msgstr "Продукты"
@@ -1240,6 +1236,10 @@ msgid_plural "%d items"
 msgstr[0] "%d элемент"
 msgstr[1] "%d элемента"
 msgstr[2] "%d элементов"
+
+#: inc/core/class-hestia-admin.php:200
+msgid "Free vs PRO"
+msgstr "Бесплатная или Pro"
 
 #. Theme URI of the theme
 msgid "https://themeisle.com/themes/hestia/"
