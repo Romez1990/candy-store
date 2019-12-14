@@ -298,5 +298,13 @@ function ingredients_meta_box($order) {
         </tr>
         </tbody>
     </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $ = jQuery;
+            const postcustom = $('#postcustom');
+            postcustom.detach();
+        });
+    </script>
     <?php
 }
