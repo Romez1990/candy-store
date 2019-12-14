@@ -271,6 +271,26 @@ function ingredients_meta_box($order) {
         }
         ?>
         <tr>
+            <?php
+            $cost = 20;
+            $total += $cost;
+            ?>
+            <td class="ingredient-name">Коммунильные услуги</td>
+            <td class="cost"><?= $cost ?>&nbsp;₽</td>
+            <td class="quantity">1</td>
+            <td class="total-cost"><?= $cost ?> ₽</td>
+        </tr>
+        <tr>
+            <?php
+            $cost = 300;
+            $total += $cost;
+            ?>
+            <td class="ingredient-name">Доставка</td>
+            <td class="cost"><?= $cost ?>&nbsp;₽</td>
+            <td class="quantity">1</td>
+            <td class="total-cost"><?= $cost ?> ₽</td>
+        </tr>
+        <tr>
             <td class="ingredient-name"></td>
             <td class="cost"></td>
             <td class="quantity">Итого:</td>
