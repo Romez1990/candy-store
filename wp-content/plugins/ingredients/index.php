@@ -271,10 +271,10 @@ function ingredients_meta_box($order) {
         }
         ?>
         <tr>
-            <td></td>
-            <td></td>
-            <td>Итого:</td>
-            <td><?= $total ?> ₽</td>
+            <td class="ingredient-name"></td>
+            <td class="cost"></td>
+            <td class="quantity">Итого:</td>
+            <td class="total-cost"><?= $total ?> ₽</td>
         </tr>
         </tbody>
     </table>
