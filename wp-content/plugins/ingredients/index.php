@@ -220,11 +220,12 @@ function ingredients_meta_box($order) {
     $total = 0;
     foreach ($items as $item) {
         $product_id = $item['product_id'];
+        $product_quantity = $item['quantity'];
         $product_ingredients = json_decode(get_post_meta($product_id, 'ingredients_array')[0]);
         foreach ($product_ingredients as $ingredient_id => $amount) {
             $amount = (float)str_replace(',', '.', $amount);
             if (!isset($ingredients[$ingredient_id]))
-                $ingredients[$ingredient_id] = $amount;
+                $ingredients[$ingredient_id] = $amount * $product_quantity;
             else
                 $ingredients[$ingredient_id] += $amount;
         }
