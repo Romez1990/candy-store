@@ -264,9 +264,11 @@ function ingredients_meta_box($order) {
             ?>
             <tr>
                 <td class="ingredient-name"><?= $ingredient_name ?></td>
-                <td class="cost"><?= $ingredient_coast ?>&nbsp;₽</td>
+                <td class="cost"><?= $ingredient_coast ?> <?=
+                    get_woocommerce_currency_symbol() ?></td>
                 <td class="quantity"><?= $amount ?> <?= $unit_name ?></td>
-                <td class="total-cost"><?= $total_coast ?> ₽</td>
+                <td class="total-cost"><?= $total_coast ?> <?= get_woocommerce_currency_symbol
+                    () ?></td>
             </tr>
             <?php
         }
@@ -277,9 +279,11 @@ function ingredients_meta_box($order) {
             $total += $cost;
             ?>
             <td class="ingredient-name">Коммунильные услуги</td>
-            <td class="cost"><?= $cost ?>&nbsp;₽</td>
-            <td class="quantity">1</td>
-            <td class="total-cost"><?= $cost ?> ₽</td>
+            <td class="cost"><?= $cost ?> <?= get_woocommerce_currency_symbol
+                () ?></td>
+            <td class="quantity">1 Шт</td>
+            <td class="total-cost"><?= $cost ?> <?= get_woocommerce_currency_symbol
+                () ?></td>
         </tr>
         <tr>
             <?php
@@ -287,15 +291,18 @@ function ingredients_meta_box($order) {
             $total += $cost;
             ?>
             <td class="ingredient-name">Доставка</td>
-            <td class="cost"><?= $cost ?>&nbsp;₽</td>
-            <td class="quantity">1</td>
-            <td class="total-cost"><?= $cost ?> ₽</td>
+            <td class="cost"><?= $cost ?> <?= get_woocommerce_currency_symbol
+                () ?></td>
+            <td class="quantity">1 Шт</td>
+            <td class="total-cost"><?= $cost ?> <?= get_woocommerce_currency_symbol
+                () ?></td>
         </tr>
         <tr>
             <td class="ingredient-name"></td>
             <td class="cost"></td>
             <td class="quantity">Итого:</td>
-            <td class="total-cost"><?= $total ?> ₽</td>
+            <td class="total-cost"><?= $total ?> <?= get_woocommerce_currency_symbol
+                () ?></td>
         </tr>
         </tbody>
     </table>
@@ -308,4 +315,14 @@ function ingredients_meta_box($order) {
         });
     </script>
     <?php
+}
+
+add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
+function change_existing_currency_symbol($currency_symbol, $currency) {
+    switch ($currency) {
+        case 'RUB':
+            $currency_symbol = 'руб.';
+            break;
+    }
+    return $currency_symbol;
 }
